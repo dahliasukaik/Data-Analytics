@@ -1,0 +1,1001 @@
+person_id,birth_year,death_date,gender,race,ethnicity,first_treatment_date,Type_of_Immunotherapy,fracture,fracture2,fracture_date
+382383,1978,5/27/2023,Female,White,Unknown,2022-11-17,drug3,thoracic,lumbar,2022-08-28
+614717,1979,8/20/2022,Male,White,Unknown,2023-05-15,drug1,thoracic,lumbar,2022-12-03
+42888,1994,7/6/2023,Female,Asian,Unknown,2022-09-23,drug1,lumbar,lumbar,2023-01-28
+776612,1996,,Female,Other Race,Not Hispanic or Latino,2022-09-22,drug2,lumbar,thoracic,2023-05-03
+920927,1959,1/7/2023,Female,Other Race,Hispanic or Latino,2023-07-02,drug1,lumbar,lumbar,2023-04-12
+639188,1942,10/9/2022,Male,Asian,Hispanic or Latino,2022-10-12,drug1,thoracic,lumbar,2023-06-14
+36718,1958,,Female,Other Race,Unknown,2023-03-29,drug3,lumbar,lumbar,2022-10-14
+979694,2000,9/26/2022,Female,Multirace,Not Hispanic or Latino,2022-10-04,drug2,lumbar,thoracic,2022-10-06
+269365,1989,,Female,Asian,Unknown,2022-12-06,drug3,thoracic,thoracic,2022-10-20
+653783,1963,5/2/2023,Female,Other Race,Hispanic or Latino,2023-06-14,drug4,thoracic,thoracic,2022-09-30
+316065,2016,,Female,Asian,Unknown,2023-05-11,drug6,thoracic,thoracic,2023-06-03
+527390,1967,,Male,Multirace,Not Hispanic or Latino,2022-12-14,drug4,lumbar,thoracic,2022-07-24
+798108,1966,12/15/2022,Male,Other Race,Hispanic or Latino,2023-01-16,drug4,thoracic,lumbar,2022-09-18
+360347,1998,,Male,Asian,Unknown,2022-08-30,drug4,thoracic,lumbar,2022-09-02
+184767,2007,,Female,White,Not Hispanic or Latino,2023-03-06,drug4,thoracic,thoracic,2023-01-01
+377185,1984,12/18/2022,Male,White,Hispanic or Latino,2023-03-09,drug3,lumbar,thoracic,2022-12-27
+633936,1937,,Male,Asian,Not Hispanic or Latino,2022-12-17,drug2,lumbar,thoracic,2022-11-08
+488079,2002,10/18/2022,Male,Asian,Unknown,2022-09-06,drug4,thoracic,thoracic,2023-04-13
+147781,1935,,Male,White,Unknown,2023-01-12,drug6,thoracic,thoracic,2023-06-07
+500543,1995,,Female,Other Race,Unknown,2022-12-12,drug5,lumbar,lumbar,2022-09-25
+169186,1997,,Male,White,Not Hispanic or Latino,2022-09-05,drug6,thoracic,thoracic,2022-10-12
+933707,1942,4/22/2023,Male,White,Unknown,2023-04-27,drug3,lumbar,lumbar,2022-09-11
+189257,1983,8/14/2022,Male,Multirace,Not Hispanic or Latino,2022-10-24,drug4,lumbar,thoracic,2022-07-28
+67807,1965,,Female,Asian,Not Hispanic or Latino,2022-08-03,drug6,thoracic,thoracic,2023-02-16
+734178,1945,,Male,Multirace,Unknown,2022-09-21,drug6,lumbar,thoracic,2023-02-11
+147339,1942,10/31/2022,Male,White,Unknown,2023-05-21,drug2,lumbar,lumbar,2023-07-03
+665995,1980,,Male,Asian,Unknown,2022-11-18,drug2,lumbar,thoracic,2023-02-01
+736243,2014,3/7/2023,Male,Asian,Unknown,2022-11-24,drug6,thoracic,lumbar,2022-11-04
+294182,1938,,Female,Asian,Hispanic or Latino,2022-09-02,drug5,thoracic,lumbar,2022-11-05
+757379,1956,,Male,Other Race,Not Hispanic or Latino,2022-08-15,drug5,thoracic,lumbar,2023-03-30
+715508,1977,6/26/2023,Female,Asian,Not Hispanic or Latino,2022-09-25,drug3,thoracic,thoracic,2023-05-23
+680671,1949,,Male,Other Race,Not Hispanic or Latino,2022-12-30,drug1,thoracic,lumbar,2023-04-11
+279216,1956,,Female,Asian,Hispanic or Latino,2023-06-04,drug3,thoracic,lumbar,2023-07-08
+297373,1986,,Female,White,Not Hispanic or Latino,2022-12-29,drug1,lumbar,thoracic,2023-03-17
+570085,1934,,Female,White,Unknown,2023-06-04,drug5,thoracic,lumbar,2022-08-30
+336018,1990,,Female,Multirace,Hispanic or Latino,2022-12-01,drug1,lumbar,thoracic,2022-08-07
+163510,1975,,Male,Asian,Not Hispanic or Latino,2022-08-14,drug3,lumbar,lumbar,2023-02-18
+646061,1962,,Male,Other Race,Hispanic or Latino,2023-02-18,drug2,thoracic,lumbar,2022-08-09
+325339,1985,,Male,White,Unknown,2022-11-13,drug3,thoracic,thoracic,2023-03-06
+11310,2009,,Male,Asian,Unknown,2023-06-03,drug2,lumbar,thoracic,2023-02-02
+433680,1955,,Female,Asian,Not Hispanic or Latino,2022-12-23,drug2,thoracic,thoracic,2023-01-23
+376746,1952,8/5/2022,Male,Multirace,Unknown,2023-02-14,drug1,thoracic,thoracic,2022-10-19
+794382,1951,,Female,White,Hispanic or Latino,2022-08-26,drug5,thoracic,lumbar,2023-02-25
+830152,1996,,Male,Asian,Hispanic or Latino,2022-07-14,drug1,thoracic,lumbar,2023-06-01
+962562,1944,,Male,Multirace,Hispanic or Latino,2023-05-18,drug6,lumbar,thoracic,2023-02-07
+582526,1959,7/19/2022,Male,Other Race,Unknown,2022-10-08,drug2,lumbar,lumbar,2023-01-29
+692410,1986,9/26/2022,Male,White,Unknown,2022-12-16,drug3,thoracic,thoracic,2023-02-14
+658874,1971,,Male,Multirace,Hispanic or Latino,2023-03-29,drug1,lumbar,lumbar,2023-07-06
+154444,1949,,Male,White,Unknown,2022-10-16,drug2,thoracic,lumbar,2022-08-24
+413494,1952,,Female,Multirace,Unknown,2023-06-05,drug3,lumbar,lumbar,2023-04-12
+772173,2000,8/21/2022,Male,Multirace,Not Hispanic or Latino,2022-07-26,drug2,lumbar,thoracic,2023-07-08
+606993,1997,7/22/2022,Female,Multirace,Unknown,2022-10-06,drug4,thoracic,lumbar,2023-02-08
+217576,2017,,Female,White,Unknown,2022-08-11,drug4,lumbar,lumbar,2023-06-27
+167998,1953,,Female,Other Race,Not Hispanic or Latino,2023-03-17,drug2,thoracic,lumbar,2022-10-29
+752605,2017,,Female,Other Race,Not Hispanic or Latino,2022-08-13,drug4,lumbar,lumbar,2023-05-01
+234889,1968,5/12/2023,Female,Other Race,Not Hispanic or Latino,2023-06-26,drug1,thoracic,lumbar,2022-07-19
+949644,1940,6/11/2023,Female,White,Hispanic or Latino,2022-12-09,drug2,lumbar,thoracic,2022-10-11
+469758,1987,,Male,Asian,Hispanic or Latino,2022-10-01,drug6,lumbar,lumbar,2022-09-08
+375872,1967,,Female,White,Unknown,2023-06-12,drug6,lumbar,thoracic,2022-12-11
+863093,2004,,Male,Multirace,Unknown,2023-05-24,drug6,lumbar,thoracic,2023-06-17
+543104,1952,12/26/2022,Female,Other Race,Unknown,2023-01-02,drug5,thoracic,thoracic,2022-10-24
+852295,1947,,Female,White,Not Hispanic or Latino,2023-05-01,drug6,thoracic,thoracic,2022-11-10
+59999,2012,,Male,Other Race,Unknown,2023-05-11,drug1,thoracic,thoracic,2023-02-07
+187781,1974,1/12/2023,Male,Asian,Unknown,2023-06-13,drug6,lumbar,thoracic,2023-02-19
+119446,1984,,Female,White,Unknown,2022-12-30,drug3,lumbar,lumbar,2022-10-13
+947442,1983,,Male,Asian,Unknown,2022-10-06,drug5,lumbar,lumbar,2023-02-18
+185528,1979,12/10/2022,Male,Other Race,Not Hispanic or Latino,2023-05-03,drug5,thoracic,thoracic,2023-04-28
+413958,1941,12/9/2022,Female,Asian,Not Hispanic or Latino,2022-08-02,drug3,thoracic,lumbar,2023-07-07
+786037,1985,1/24/2023,Female,Multirace,Unknown,2023-06-24,drug1,thoracic,lumbar,2023-06-05
+9874,2004,,Male,White,Not Hispanic or Latino,2023-03-05,drug6,thoracic,lumbar,2022-09-29
+536450,1973,,Female,White,Hispanic or Latino,2022-08-11,drug6,lumbar,lumbar,2023-02-01
+616364,1965,1/11/2023,Female,Other Race,Not Hispanic or Latino,2022-09-28,drug5,thoracic,thoracic,2023-02-26
+105035,1993,7/1/2023,Male,Multirace,Unknown,2023-02-10,drug2,lumbar,lumbar,2022-08-14
+602142,1984,,Male,Other Race,Hispanic or Latino,2022-11-07,drug1,lumbar,lumbar,2023-05-21
+179083,2002,,Female,Asian,Unknown,2023-05-31,drug5,thoracic,lumbar,2022-07-16
+944159,1940,,Female,White,Not Hispanic or Latino,2023-05-31,drug6,thoracic,thoracic,2022-11-21
+454750,2015,,Female,Multirace,Hispanic or Latino,2023-05-15,drug5,lumbar,thoracic,2023-06-03
+294676,1998,10/16/2022,Female,White,Not Hispanic or Latino,2022-09-25,drug6,thoracic,thoracic,2022-08-30
+791724,1973,,Male,Multirace,Hispanic or Latino,2023-04-24,drug6,lumbar,lumbar,2022-10-31
+964521,2007,3/10/2023,Female,Asian,Not Hispanic or Latino,2022-08-18,drug1,thoracic,thoracic,2023-06-18
+389381,1940,,Male,Other Race,Hispanic or Latino,2023-05-15,drug4,thoracic,thoracic,2022-10-27
+68909,1961,12/17/2022,Female,Asian,Unknown,2023-04-23,drug5,thoracic,thoracic,2022-07-23
+788959,1986,,Male,Asian,Not Hispanic or Latino,2023-03-09,drug3,lumbar,lumbar,2023-04-27
+540855,1987,,Female,Multirace,Unknown,2023-01-23,drug4,thoracic,thoracic,2023-06-09
+873686,1991,,Male,Asian,Not Hispanic or Latino,2023-04-28,drug2,thoracic,thoracic,2022-10-31
+327088,1941,10/31/2022,Male,White,Hispanic or Latino,2022-09-06,drug1,thoracic,thoracic,2023-05-03
+330794,2009,7/17/2022,Female,Multirace,Not Hispanic or Latino,2022-10-19,drug4,thoracic,thoracic,2022-08-18
+419705,1940,,Male,Asian,Hispanic or Latino,2023-04-28,drug2,thoracic,lumbar,2022-09-30
+649808,2003,6/19/2023,Male,Multirace,Unknown,2023-03-15,drug1,lumbar,lumbar,2023-01-22
+552491,1965,5/29/2023,Female,White,Not Hispanic or Latino,2022-10-04,drug6,lumbar,lumbar,2022-10-28
+378041,1957,,Male,Other Race,Not Hispanic or Latino,2023-05-27,drug2,thoracic,lumbar,2022-08-10
+161312,1958,12/23/2022,Female,Asian,Unknown,2022-10-09,drug3,thoracic,lumbar,2023-07-03
+447594,2010,2/19/2023,Female,Asian,Hispanic or Latino,2022-08-29,drug2,lumbar,thoracic,2023-01-30
+580340,2001,11/14/2022,Male,White,Not Hispanic or Latino,2023-01-16,drug5,lumbar,lumbar,2023-07-11
+600104,1996,4/16/2023,Female,Multirace,Hispanic or Latino,2023-03-16,drug2,lumbar,thoracic,2023-06-16
+858149,1935,1/8/2023,Female,Asian,Not Hispanic or Latino,2022-09-28,drug1,thoracic,thoracic,2022-07-18
+222135,1991,,Male,Asian,Not Hispanic or Latino,2023-02-27,drug2,thoracic,lumbar,2023-05-22
+682433,1980,7/16/2022,Female,White,Hispanic or Latino,2023-06-11,drug5,lumbar,lumbar,2022-12-04
+799906,1998,,Male,Asian,Unknown,2023-04-22,drug2,thoracic,lumbar,2023-01-26
+109213,1969,1/17/2023,Female,Multirace,Unknown,2023-07-03,drug6,thoracic,lumbar,2022-09-05
+764108,1983,,Male,Multirace,Hispanic or Latino,2022-08-12,drug6,lumbar,thoracic,2022-10-17
+432267,1966,5/15/2023,Male,Asian,Not Hispanic or Latino,2022-09-08,drug5,thoracic,lumbar,2022-12-02
+145994,1983,5/31/2023,Male,White,Not Hispanic or Latino,2022-11-15,drug2,thoracic,thoracic,2023-04-30
+203943,1963,2/6/2023,Female,Other Race,Hispanic or Latino,2023-04-12,drug2,thoracic,thoracic,2023-05-25
+393736,1990,7/7/2023,Male,Asian,Not Hispanic or Latino,2022-10-05,drug6,thoracic,lumbar,2023-06-07
+679761,2005,,Male,White,Hispanic or Latino,2023-02-25,drug1,lumbar,thoracic,2023-02-10
+663492,2016,,Male,Other Race,Unknown,2023-07-10,drug6,thoracic,lumbar,2022-11-01
+683140,1940,12/15/2022,Male,Other Race,Not Hispanic or Latino,2023-07-11,drug3,lumbar,lumbar,2022-11-01
+929714,1979,,Male,Asian,Hispanic or Latino,2023-06-01,drug4,lumbar,thoracic,2022-11-24
+784868,1961,,Male,Multirace,Hispanic or Latino,2022-07-27,drug1,thoracic,thoracic,2023-04-05
+857843,1978,10/30/2022,Female,Other Race,Not Hispanic or Latino,2023-05-21,drug5,lumbar,lumbar,2023-06-15
+244487,1981,,Female,White,Not Hispanic or Latino,2022-10-16,drug5,thoracic,thoracic,2022-12-28
+652223,1940,,Male,Asian,Hispanic or Latino,2023-05-23,drug6,lumbar,lumbar,2022-11-17
+865245,1984,,Female,Asian,Unknown,2022-12-30,drug5,lumbar,thoracic,2022-09-22
+162270,1994,,Female,Asian,Hispanic or Latino,2023-04-24,drug2,lumbar,lumbar,2023-05-01
+254078,1955,,Male,Other Race,Hispanic or Latino,2022-07-18,drug4,lumbar,thoracic,2022-10-16
+516259,1936,,Male,White,Not Hispanic or Latino,2023-06-29,drug4,lumbar,lumbar,2023-02-26
+457951,1970,10/29/2022,Female,White,Unknown,2022-09-18,drug6,thoracic,thoracic,2023-01-07
+517973,1938,9/4/2022,Female,White,Hispanic or Latino,2022-10-02,drug6,thoracic,thoracic,2022-12-11
+314881,1968,,Male,Multirace,Hispanic or Latino,2022-11-23,drug2,thoracic,lumbar,2022-08-19
+374652,1966,,Male,White,Hispanic or Latino,2023-01-28,drug4,lumbar,thoracic,2023-04-21
+112286,1955,6/8/2023,Male,Other Race,Unknown,2022-08-21,drug4,thoracic,lumbar,2023-02-09
+621957,1963,,Male,White,Hispanic or Latino,2023-01-26,drug4,lumbar,thoracic,2022-08-17
+178546,1946,,Female,Asian,Hispanic or Latino,2022-09-07,drug4,lumbar,thoracic,2022-11-04
+994592,2016,,Male,Multirace,Unknown,2022-08-14,drug4,lumbar,lumbar,2023-06-14
+339079,1965,,Male,Other Race,Unknown,2022-07-29,drug4,thoracic,thoracic,2023-05-06
+617490,1965,9/10/2022,Male,Asian,Unknown,2023-01-31,drug6,lumbar,thoracic,2022-09-15
+982545,2010,,Female,Other Race,Hispanic or Latino,2023-05-16,drug4,lumbar,thoracic,2022-11-26
+37349,1983,7/20/2022,Male,White,Unknown,2022-10-15,drug4,lumbar,lumbar,2022-09-17
+568798,1970,5/9/2023,Female,Multirace,Not Hispanic or Latino,2022-10-04,drug2,thoracic,thoracic,2023-01-07
+211857,2007,8/27/2022,Male,White,Hispanic or Latino,2022-12-26,drug1,thoracic,thoracic,2023-06-08
+974041,1942,2/22/2023,Female,White,Hispanic or Latino,2022-08-18,drug4,lumbar,thoracic,2023-02-09
+451454,1950,,Female,Multirace,Not Hispanic or Latino,2022-10-08,drug3,lumbar,lumbar,2023-05-30
+176805,1973,8/26/2022,Female,Multirace,Unknown,2023-03-14,drug2,lumbar,thoracic,2023-04-18
+843750,1995,,Male,Multirace,Unknown,2022-11-24,drug6,thoracic,lumbar,2023-03-04
+566144,1987,,Female,Multirace,Unknown,2022-08-01,drug5,thoracic,thoracic,2022-12-25
+696646,1991,,Female,White,Not Hispanic or Latino,2022-10-29,drug1,thoracic,lumbar,2023-06-09
+511867,2000,10/19/2022,Male,Multirace,Not Hispanic or Latino,2022-11-30,drug4,thoracic,lumbar,2023-03-05
+137280,1997,,Female,Other Race,Unknown,2023-02-22,drug5,thoracic,thoracic,2022-11-16
+902443,1964,1/7/2023,Male,White,Not Hispanic or Latino,2022-09-07,drug6,thoracic,lumbar,2022-09-18
+732767,1949,3/16/2023,Male,Multirace,Unknown,2022-10-05,drug1,lumbar,lumbar,2022-10-06
+445687,2007,12/12/2022,Female,Asian,Hispanic or Latino,2023-01-22,drug4,thoracic,thoracic,2022-10-10
+782331,1959,11/15/2022,Male,White,Hispanic or Latino,2023-05-24,drug3,thoracic,thoracic,2022-08-30
+890922,1991,,Male,Asian,Hispanic or Latino,2022-08-03,drug3,thoracic,thoracic,2023-04-14
+356134,1989,12/13/2022,Male,Asian,Not Hispanic or Latino,2023-02-01,drug2,lumbar,lumbar,2023-02-22
+513245,1999,,Male,Asian,Not Hispanic or Latino,2023-01-24,drug2,thoracic,lumbar,2023-01-28
+449637,1941,2/7/2023,Male,Multirace,Not Hispanic or Latino,2023-02-28,drug6,thoracic,lumbar,2023-04-28
+550343,1997,,Male,Asian,Hispanic or Latino,2022-07-16,drug1,thoracic,lumbar,2023-01-10
+851049,2013,,Female,Multirace,Not Hispanic or Latino,2023-02-25,drug1,thoracic,thoracic,2023-03-28
+76230,1964,,Male,Other Race,Unknown,2023-03-24,drug3,lumbar,lumbar,2023-03-01
+300688,2000,,Female,White,Hispanic or Latino,2022-09-30,drug6,thoracic,thoracic,2023-01-25
+303530,2000,,Male,Other Race,Unknown,2022-08-31,drug6,lumbar,lumbar,2022-08-15
+641689,1947,,Male,Other Race,Hispanic or Latino,2022-07-27,drug6,thoracic,thoracic,2023-06-01
+470521,1956,12/6/2022,Female,Multirace,Unknown,2022-12-03,drug3,lumbar,lumbar,2023-05-03
+674689,1948,,Male,Asian,Unknown,2023-06-20,drug1,lumbar,lumbar,2023-05-17
+208723,1956,,Male,Multirace,Not Hispanic or Latino,2023-06-30,drug1,thoracic,thoracic,2023-05-11
+113872,2011,9/17/2022,Female,Asian,Unknown,2022-07-14,drug4,lumbar,thoracic,2023-03-12
+301742,2014,7/25/2022,Male,White,Unknown,2022-11-26,drug1,thoracic,thoracic,2022-08-17
+454137,1938,,Male,White,Hispanic or Latino,2022-10-06,drug3,thoracic,thoracic,2022-11-18
+238274,1996,2/2/2023,Male,Other Race,Hispanic or Latino,2023-04-09,drug5,lumbar,lumbar,2023-01-05
+906941,1969,5/6/2023,Male,Other Race,Hispanic or Latino,2023-02-07,drug6,thoracic,thoracic,2023-04-08
+358845,1963,,Male,White,Unknown,2022-11-08,drug1,thoracic,thoracic,2022-08-25
+802132,1957,,Male,Other Race,Hispanic or Latino,2023-05-02,drug1,lumbar,lumbar,2023-04-05
+10961,1966,6/25/2023,Female,Other Race,Hispanic or Latino,2022-12-06,drug5,lumbar,lumbar,2023-03-19
+674039,1961,7/13/2022,Male,White,Unknown,2022-10-24,drug5,lumbar,lumbar,2023-05-31
+898662,1961,,Male,Asian,Unknown,2023-04-12,drug4,thoracic,lumbar,2023-03-26
+399084,1957,1/17/2023,Male,Asian,Unknown,2023-06-16,drug1,lumbar,lumbar,2022-10-11
+573047,2001,4/2/2023,Female,Multirace,Hispanic or Latino,2023-01-26,drug5,thoracic,thoracic,2022-11-09
+494650,1946,,Male,Other Race,Hispanic or Latino,2022-10-12,drug2,thoracic,lumbar,2022-12-25
+73895,2002,,Male,White,Not Hispanic or Latino,2023-04-20,drug4,lumbar,thoracic,2022-12-23
+704886,1938,,Female,White,Hispanic or Latino,2023-02-09,drug2,thoracic,lumbar,2022-08-30
+162441,2003,,Male,White,Unknown,2022-09-17,drug2,lumbar,lumbar,2022-10-29
+687805,2005,,Male,Other Race,Not Hispanic or Latino,2022-11-05,drug2,thoracic,thoracic,2023-01-03
+241984,1996,10/9/2022,Female,Asian,Hispanic or Latino,2022-12-31,drug6,thoracic,thoracic,2023-03-31
+653981,1963,2/28/2023,Female,White,Unknown,2022-11-23,drug2,thoracic,thoracic,2022-10-21
+375789,2012,10/28/2022,Male,Asian,Hispanic or Latino,2023-06-07,drug4,thoracic,thoracic,2023-05-05
+309062,1985,2/14/2023,Male,Asian,Not Hispanic or Latino,2022-12-22,drug4,thoracic,thoracic,2023-03-19
+964767,1999,,Female,Multirace,Unknown,2023-01-20,drug4,lumbar,lumbar,2023-02-19
+565191,1980,,Female,Multirace,Hispanic or Latino,2023-07-10,drug6,lumbar,thoracic,2022-08-04
+724742,1942,10/26/2022,Male,White,Not Hispanic or Latino,2022-10-20,drug3,lumbar,thoracic,2023-05-05
+261991,1952,,Male,Other Race,Unknown,2022-07-17,drug5,thoracic,lumbar,2023-04-17
+17966,1973,,Male,Other Race,Unknown,2022-11-11,drug5,lumbar,lumbar,2023-04-08
+192692,1938,3/17/2023,Female,Multirace,Unknown,2022-07-18,drug3,lumbar,lumbar,2022-12-30
+127529,1993,,Female,White,Unknown,2022-10-28,drug6,lumbar,lumbar,2023-01-08
+234636,1947,3/23/2023,Female,White,Not Hispanic or Latino,2023-04-11,drug1,lumbar,lumbar,2022-10-15
+309373,1973,,Female,White,Hispanic or Latino,2022-08-22,drug1,lumbar,lumbar,2023-05-11
+257154,1968,4/7/2023,Male,Other Race,Hispanic or Latino,2022-10-07,drug1,thoracic,thoracic,2023-01-03
+430910,1948,,Male,Asian,Unknown,2023-07-08,drug2,thoracic,thoracic,2023-05-30
+902182,2008,,Female,Other Race,Hispanic or Latino,2022-09-01,drug4,thoracic,lumbar,2023-01-22
+339054,1942,,Male,White,Unknown,2023-01-11,drug4,thoracic,lumbar,2022-11-01
+474656,1977,,Female,Multirace,Hispanic or Latino,2022-11-07,drug4,thoracic,lumbar,2023-01-30
+598640,2012,,Female,Multirace,Not Hispanic or Latino,2023-04-28,drug5,thoracic,thoracic,2022-12-13
+923654,1977,,Male,Other Race,Unknown,2023-01-02,drug3,thoracic,lumbar,2022-07-16
+214346,1964,,Female,Multirace,Not Hispanic or Latino,2022-09-25,drug1,thoracic,thoracic,2023-04-05
+783180,1942,4/18/2023,Female,Multirace,Unknown,2023-04-01,drug6,thoracic,thoracic,2022-09-26
+633435,1940,,Female,White,Hispanic or Latino,2023-02-01,drug4,lumbar,thoracic,2022-08-22
+529168,2009,,Male,Asian,Unknown,2023-01-25,drug5,thoracic,thoracic,2023-06-18
+1006898,1948,4/16/2023,Male,White,Hispanic or Latino,2022-08-16,drug2,lumbar,thoracic,2022-12-07
+342103,1987,9/23/2022,Female,Multirace,Hispanic or Latino,2023-06-06,drug4,thoracic,lumbar,2022-08-09
+818602,1965,,Female,White,Not Hispanic or Latino,2023-03-09,drug6,lumbar,lumbar,2022-07-21
+194294,1937,8/7/2022,Male,Other Race,Hispanic or Latino,2023-06-18,drug5,thoracic,thoracic,2023-02-02
+228312,2015,,Female,Asian,Not Hispanic or Latino,2022-10-21,drug6,thoracic,thoracic,2022-10-13
+671088,1980,8/24/2022,Male,White,Not Hispanic or Latino,2023-01-12,drug1,lumbar,lumbar,2023-06-16
+892385,1944,,Female,Multirace,Not Hispanic or Latino,2023-04-15,drug4,lumbar,lumbar,2023-02-10
+811755,1960,,Female,Asian,Unknown,2022-12-15,drug6,lumbar,lumbar,2023-05-01
+531514,1984,,Female,Asian,Not Hispanic or Latino,2023-01-24,drug4,thoracic,lumbar,2023-05-22
+424440,1978,,Female,Other Race,Not Hispanic or Latino,2022-12-06,drug2,lumbar,thoracic,2023-03-23
+510183,2003,12/25/2022,Male,Multirace,Hispanic or Latino,2023-03-15,drug6,thoracic,lumbar,2023-04-19
+411412,1985,12/1/2022,Female,Multirace,Unknown,2023-06-17,drug3,lumbar,lumbar,2023-01-09
+36528,1999,5/10/2023,Male,White,Hispanic or Latino,2023-06-08,drug5,lumbar,lumbar,2022-11-17
+427623,1992,,Male,Multirace,Hispanic or Latino,2022-08-05,drug3,thoracic,thoracic,2023-04-24
+504007,2006,6/19/2023,Male,Asian,Not Hispanic or Latino,2023-04-20,drug4,thoracic,thoracic,2023-03-24
+579579,2014,10/10/2022,Male,Multirace,Unknown,2023-01-10,drug6,lumbar,lumbar,2022-11-20
+353816,1990,4/16/2023,Female,Other Race,Unknown,2023-07-09,drug2,lumbar,lumbar,2023-06-28
+885539,1955,12/26/2022,Male,White,Unknown,2022-12-06,drug1,thoracic,thoracic,2022-12-07
+610332,2016,,Female,Other Race,Not Hispanic or Latino,2022-09-12,drug3,thoracic,thoracic,2023-01-02
+27107,1961,7/5/2023,Male,White,Not Hispanic or Latino,2023-06-12,drug5,thoracic,lumbar,2022-07-20
+830445,1943,2/2/2023,Female,White,Hispanic or Latino,2022-11-14,drug5,thoracic,lumbar,2023-04-10
+365949,1943,2/14/2023,Male,Multirace,Not Hispanic or Latino,2023-02-22,drug6,lumbar,thoracic,2023-01-26
+337233,1967,5/12/2023,Male,Asian,Not Hispanic or Latino,2022-09-22,drug6,lumbar,lumbar,2023-06-20
+944289,2014,8/19/2022,Female,Asian,Unknown,2023-02-08,drug2,thoracic,lumbar,2022-10-26
+166223,1936,,Male,Multirace,Unknown,2023-04-05,drug1,lumbar,lumbar,2023-03-18
+343034,1974,,Male,Multirace,Unknown,2023-07-08,drug2,lumbar,thoracic,2023-05-26
+628736,1949,,Male,White,Not Hispanic or Latino,2022-09-24,drug5,lumbar,thoracic,2022-11-17
+865549,2014,,Female,Asian,Unknown,2023-05-13,drug5,lumbar,lumbar,2022-09-26
+834336,1938,6/8/2023,Female,Asian,Hispanic or Latino,2023-02-15,drug2,thoracic,thoracic,2022-09-28
+198755,1976,,Female,Multirace,Unknown,2023-04-23,drug4,thoracic,lumbar,2022-09-17
+15269,1954,,Male,Multirace,Unknown,2023-04-16,drug1,thoracic,lumbar,2023-04-22
+298585,1990,6/12/2023,Female,Other Race,Hispanic or Latino,2022-09-07,drug2,thoracic,thoracic,2023-02-12
+903990,1993,10/9/2022,Female,Multirace,Unknown,2023-03-15,drug4,thoracic,lumbar,2023-07-01
+300669,1967,4/23/2023,Male,Asian,Unknown,2023-06-07,drug5,lumbar,thoracic,2023-03-19
+149904,1973,,Female,Asian,Hispanic or Latino,2022-12-30,drug1,lumbar,lumbar,2023-06-21
+641184,2011,3/30/2023,Male,Multirace,Not Hispanic or Latino,2023-01-10,drug3,thoracic,thoracic,2022-12-20
+679113,1977,1/21/2023,Male,Multirace,Unknown,2022-11-29,drug1,lumbar,lumbar,2023-06-06
+751059,1998,,Male,Other Race,Not Hispanic or Latino,2023-01-25,drug5,lumbar,thoracic,2022-09-05
+738046,1939,,Male,Other Race,Hispanic or Latino,2022-11-29,drug1,lumbar,lumbar,2023-04-30
+490305,2010,,Female,White,Unknown,2023-02-14,drug4,lumbar,thoracic,2023-02-18
+95459,1938,6/14/2023,Female,Multirace,Hispanic or Latino,2022-12-21,drug5,thoracic,thoracic,2023-01-03
+552396,1974,,Female,Multirace,Hispanic or Latino,2022-08-08,drug6,lumbar,thoracic,2023-04-29
+350908,2015,,Male,Multirace,Unknown,2022-11-19,drug2,thoracic,thoracic,2022-11-09
+152284,2001,,Female,White,Not Hispanic or Latino,2022-11-18,drug5,thoracic,lumbar,2022-09-20
+621225,1979,,Male,White,Hispanic or Latino,2022-12-04,drug2,lumbar,thoracic,2022-07-20
+853089,1996,11/30/2022,Female,Multirace,Unknown,2022-08-28,drug3,thoracic,thoracic,2022-09-24
+477312,1985,3/16/2023,Female,Asian,Not Hispanic or Latino,2023-07-08,drug2,thoracic,thoracic,2023-01-23
+513741,2001,,Female,Multirace,Not Hispanic or Latino,2022-12-04,drug3,lumbar,lumbar,2022-07-14
+182584,2007,7/4/2023,Female,Multirace,Hispanic or Latino,2022-09-22,drug3,thoracic,lumbar,2023-04-16
+95223,1966,,Female,Other Race,Not Hispanic or Latino,2023-04-22,drug4,thoracic,lumbar,2022-08-20
+149211,2009,,Female,Asian,Hispanic or Latino,2022-11-07,drug6,lumbar,lumbar,2022-11-27
+757208,2008,,Female,White,Unknown,2023-04-23,drug3,lumbar,lumbar,2022-09-14
+558786,1991,9/9/2022,Male,Multirace,Hispanic or Latino,2023-06-03,drug4,thoracic,lumbar,2022-12-04
+171998,1980,7/21/2022,Male,Multirace,Not Hispanic or Latino,2023-01-18,drug6,lumbar,lumbar,2023-02-15
+982982,2007,,Male,White,Not Hispanic or Latino,2023-05-25,drug3,lumbar,lumbar,2023-01-13
+573479,1990,4/29/2023,Female,Asian,Not Hispanic or Latino,2023-07-03,drug2,thoracic,lumbar,2022-07-12
+170569,1943,11/23/2022,Female,Asian,Hispanic or Latino,2023-05-01,drug1,lumbar,lumbar,2022-09-05
+566503,2005,,Female,Asian,Hispanic or Latino,2022-07-15,drug5,lumbar,lumbar,2023-04-02
+160609,1976,,Male,Other Race,Unknown,2022-12-31,drug3,lumbar,thoracic,2022-11-29
+143067,1979,,Female,Other Race,Unknown,2022-11-23,drug1,thoracic,lumbar,2022-10-09
+887038,1946,,Female,Multirace,Hispanic or Latino,2023-04-02,drug6,thoracic,lumbar,2022-11-14
+578024,2011,,Male,White,Not Hispanic or Latino,2022-08-05,drug6,lumbar,lumbar,2022-11-18
+130876,1973,,Female,White,Not Hispanic or Latino,2023-05-18,drug1,lumbar,thoracic,2023-03-09
+333722,1993,9/11/2022,Male,Multirace,Hispanic or Latino,2022-12-11,drug2,lumbar,lumbar,2023-05-26
+147409,2017,,Male,Multirace,Not Hispanic or Latino,2023-05-02,drug6,lumbar,lumbar,2022-07-30
+940149,1961,9/7/2022,Female,Asian,Hispanic or Latino,2022-11-08,drug2,thoracic,lumbar,2023-03-09
+423284,2002,,Male,Asian,Not Hispanic or Latino,2023-01-17,drug3,thoracic,lumbar,2022-11-14
+769696,1982,10/5/2022,Male,Asian,Hispanic or Latino,2022-11-21,drug6,thoracic,thoracic,2022-11-23
+257669,1984,4/15/2023,Male,White,Unknown,2022-11-18,drug2,thoracic,lumbar,2023-02-24
+80268,1953,7/27/2022,Female,Multirace,Hispanic or Latino,2023-03-31,drug1,lumbar,lumbar,2023-05-17
+248227,1989,,Female,Asian,Unknown,2022-07-17,drug6,thoracic,lumbar,2023-06-29
+650992,1939,,Male,Other Race,Not Hispanic or Latino,2022-07-19,drug5,lumbar,thoracic,2023-02-10
+724381,1982,,Female,Multirace,Not Hispanic or Latino,2022-10-14,drug4,thoracic,lumbar,2023-05-13
+1001916,1973,9/6/2022,Female,White,Not Hispanic or Latino,2023-05-11,drug1,lumbar,thoracic,2023-03-23
+163683,1985,,Female,Other Race,Not Hispanic or Latino,2023-01-07,drug5,lumbar,thoracic,2023-01-05
+398662,1967,,Male,Asian,Hispanic or Latino,2023-02-10,drug3,thoracic,thoracic,2022-10-23
+573586,1966,,Male,Asian,Hispanic or Latino,2022-09-26,drug3,thoracic,thoracic,2023-03-22
+871355,1977,,Male,Asian,Unknown,2023-04-22,drug4,thoracic,thoracic,2023-03-19
+165106,1945,,Female,Other Race,Unknown,2022-11-15,drug5,thoracic,thoracic,2022-12-13
+151827,1994,1/20/2023,Female,Multirace,Unknown,2023-02-27,drug1,thoracic,lumbar,2023-03-28
+719665,2007,,Male,White,Not Hispanic or Latino,2022-10-28,drug6,lumbar,thoracic,2022-07-16
+52086,2003,,Female,White,Hispanic or Latino,2022-11-10,drug3,lumbar,lumbar,2023-01-25
+274791,1992,4/7/2023,Male,Multirace,Hispanic or Latino,2022-08-12,drug6,thoracic,lumbar,2023-01-04
+31377,2002,1/13/2023,Female,White,Hispanic or Latino,2022-09-07,drug2,lumbar,thoracic,2023-03-04
+754561,1985,,Female,Asian,Unknown,2022-11-19,drug6,thoracic,lumbar,2022-07-19
+159361,1977,2/2/2023,Female,White,Unknown,2023-06-15,drug2,thoracic,lumbar,2023-04-06
+736323,1986,12/20/2022,Male,White,Unknown,2022-09-10,drug4,lumbar,thoracic,2022-12-03
+449828,1938,,Female,Multirace,Hispanic or Latino,2023-06-27,drug6,thoracic,lumbar,2023-05-30
+208647,1999,,Female,Asian,Not Hispanic or Latino,2022-07-13,drug1,thoracic,thoracic,2023-05-14
+460121,1955,,Male,Multirace,Not Hispanic or Latino,2022-08-25,drug5,lumbar,lumbar,2023-03-05
+539960,1960,8/14/2022,Male,White,Hispanic or Latino,2023-02-12,drug1,thoracic,thoracic,2023-06-08
+504131,2015,,Female,Other Race,Hispanic or Latino,2022-10-07,drug5,thoracic,thoracic,2023-07-08
+49190,1959,11/15/2022,Male,Multirace,Hispanic or Latino,2023-04-18,drug1,lumbar,thoracic,2022-11-10
+146929,1999,,Male,Asian,Not Hispanic or Latino,2023-02-10,drug6,thoracic,thoracic,2023-07-02
+248967,1994,,Female,Multirace,Hispanic or Latino,2023-07-11,drug2,lumbar,lumbar,2022-09-09
+825404,1940,,Female,White,Hispanic or Latino,2022-12-05,drug4,thoracic,lumbar,2023-01-15
+855040,1996,,Female,Other Race,Hispanic or Latino,2022-10-24,drug5,thoracic,lumbar,2023-06-04
+742052,1974,,Female,Multirace,Hispanic or Latino,2023-04-01,drug3,thoracic,lumbar,2023-05-14
+742747,1964,,Female,White,Not Hispanic or Latino,2022-09-12,drug4,thoracic,thoracic,2022-11-26
+112695,1966,,Female,Other Race,Hispanic or Latino,2022-07-30,drug4,thoracic,lumbar,2023-06-02
+861537,1982,,Female,Asian,Hispanic or Latino,2022-08-17,drug2,thoracic,lumbar,2022-12-19
+49331,1981,7/21/2022,Male,White,Not Hispanic or Latino,2023-01-22,drug6,thoracic,lumbar,2022-09-03
+163239,1942,,Male,Asian,Hispanic or Latino,2022-10-21,drug3,lumbar,lumbar,2023-01-29
+114248,1966,,Male,Asian,Not Hispanic or Latino,2022-12-14,drug1,lumbar,lumbar,2022-07-31
+461718,1978,6/25/2023,Female,White,Hispanic or Latino,2023-04-20,drug4,thoracic,lumbar,2022-10-08
+376302,2007,9/14/2022,Male,Multirace,Hispanic or Latino,2022-09-23,drug6,thoracic,lumbar,2022-11-03
+477867,2008,,Female,White,Not Hispanic or Latino,2023-03-08,drug4,lumbar,thoracic,2023-02-10
+664404,1980,,Female,White,Hispanic or Latino,2022-10-29,drug6,thoracic,lumbar,2023-02-16
+363818,2016,,Male,Multirace,Unknown,2023-06-10,drug5,lumbar,lumbar,2023-02-03
+845544,2006,,Female,Multirace,Hispanic or Latino,2023-06-05,drug5,thoracic,thoracic,2023-03-24
+752433,1992,,Female,Other Race,Not Hispanic or Latino,2023-04-09,drug2,thoracic,thoracic,2023-01-23
+736669,1978,7/7/2023,Female,Asian,Not Hispanic or Latino,2023-03-10,drug4,thoracic,thoracic,2023-05-20
+21638,2002,,Male,Other Race,Unknown,2023-05-26,drug4,lumbar,lumbar,2023-02-11
+776008,1947,,Female,Asian,Not Hispanic or Latino,2022-12-06,drug4,thoracic,lumbar,2023-02-15
+933980,2013,,Female,Multirace,Hispanic or Latino,2023-05-29,drug6,thoracic,thoracic,2023-05-31
+150942,1936,1/22/2023,Female,White,Hispanic or Latino,2023-07-07,drug2,thoracic,thoracic,2023-05-28
+248486,1983,,Male,White,Unknown,2023-05-24,drug2,lumbar,thoracic,2023-05-31
+324599,1995,3/18/2023,Male,Multirace,Not Hispanic or Latino,2023-05-04,drug1,lumbar,lumbar,2023-03-08
+573388,1946,8/8/2022,Male,White,Unknown,2023-03-20,drug5,thoracic,thoracic,2022-11-18
+468344,1951,8/9/2022,Female,Other Race,Not Hispanic or Latino,2023-07-10,drug2,thoracic,thoracic,2022-12-02
+60887,2016,12/16/2022,Female,Other Race,Not Hispanic or Latino,2023-01-19,drug3,thoracic,thoracic,2023-03-12
+607362,1963,10/2/2022,Male,White,Hispanic or Latino,2023-01-06,drug4,lumbar,lumbar,2022-09-30
+755224,1962,,Male,Asian,Hispanic or Latino,2023-03-01,drug1,lumbar,lumbar,2023-06-16
+646257,2002,,Male,Multirace,Not Hispanic or Latino,2022-07-25,drug5,lumbar,thoracic,2023-06-27
+240704,1971,8/4/2022,Male,Multirace,Not Hispanic or Latino,2023-05-09,drug3,thoracic,lumbar,2022-10-27
+432249,2010,12/6/2022,Female,Other Race,Unknown,2023-01-15,drug3,lumbar,lumbar,2022-07-14
+2514,2004,10/8/2022,Male,Multirace,Unknown,2023-02-14,drug1,lumbar,lumbar,2023-06-27
+415513,2010,7/1/2023,Female,White,Unknown,2022-07-28,drug5,thoracic,lumbar,2023-03-11
+987833,1938,,Female,White,Not Hispanic or Latino,2023-01-09,drug3,lumbar,lumbar,2022-08-29
+251705,1984,,Female,White,Not Hispanic or Latino,2022-08-21,drug1,lumbar,lumbar,2022-11-14
+605044,1977,4/27/2023,Male,Multirace,Unknown,2023-04-15,drug2,lumbar,lumbar,2022-12-17
+47702,1992,,Female,Asian,Not Hispanic or Latino,2022-10-19,drug4,lumbar,lumbar,2023-02-23
+809118,1964,11/19/2022,Female,Asian,Hispanic or Latino,2022-11-25,drug5,thoracic,thoracic,2023-02-24
+45338,2000,3/28/2023,Male,White,Not Hispanic or Latino,2022-09-04,drug3,lumbar,thoracic,2023-02-12
+760836,1983,,Female,White,Unknown,2023-04-27,drug3,thoracic,lumbar,2022-12-25
+280245,1945,,Male,Other Race,Not Hispanic or Latino,2022-12-18,drug5,thoracic,thoracic,2023-06-20
+577622,1977,,Male,Multirace,Unknown,2023-02-01,drug2,thoracic,thoracic,2022-12-16
+801362,2010,,Male,White,Not Hispanic or Latino,2022-12-08,drug5,thoracic,thoracic,2023-05-02
+34583,2014,,Male,Asian,Not Hispanic or Latino,2022-07-24,drug6,lumbar,thoracic,2022-09-10
+995387,1971,8/16/2022,Female,Asian,Not Hispanic or Latino,2023-02-07,drug5,thoracic,thoracic,2022-11-29
+266128,1970,8/22/2022,Male,White,Unknown,2022-12-17,drug1,lumbar,lumbar,2022-10-16
+112163,1989,,Female,Asian,Hispanic or Latino,2023-05-03,drug4,thoracic,lumbar,2022-10-21
+471612,2005,,Male,White,Hispanic or Latino,2023-06-09,drug1,thoracic,lumbar,2022-07-16
+395773,1943,10/17/2022,Female,White,Hispanic or Latino,2022-09-07,drug5,lumbar,lumbar,2023-07-08
+978727,1965,,Male,Other Race,Not Hispanic or Latino,2022-08-12,drug1,lumbar,thoracic,2022-08-07
+449728,1966,4/3/2023,Female,Asian,Unknown,2023-05-17,drug1,lumbar,thoracic,2023-02-06
+943327,1965,,Male,Other Race,Hispanic or Latino,2022-09-18,drug4,thoracic,thoracic,2022-11-16
+20390,1997,,Female,Asian,Hispanic or Latino,2023-03-13,drug4,thoracic,lumbar,2023-05-07
+798829,1974,7/27/2022,Male,Other Race,Not Hispanic or Latino,2022-12-31,drug1,thoracic,lumbar,2022-11-23
+604385,2015,,Female,Asian,Not Hispanic or Latino,2022-08-21,drug2,lumbar,lumbar,2023-02-01
+135281,1953,,Female,White,Unknown,2023-03-16,drug1,lumbar,lumbar,2023-03-12
+385419,1966,,Male,Asian,Not Hispanic or Latino,2022-08-26,drug2,thoracic,thoracic,2023-01-02
+857968,1966,,Male,Asian,Hispanic or Latino,2022-10-16,drug6,lumbar,thoracic,2022-09-30
+38333,1999,,Female,White,Hispanic or Latino,2023-01-09,drug3,lumbar,lumbar,2023-04-29
+400987,1943,,Male,Asian,Hispanic or Latino,2023-01-23,drug3,thoracic,lumbar,2022-10-21
+710056,2012,4/15/2023,Female,Other Race,Hispanic or Latino,2023-05-27,drug4,lumbar,lumbar,2023-04-23
+839657,1961,9/21/2022,Female,White,Hispanic or Latino,2023-01-17,drug4,thoracic,lumbar,2022-10-30
+964017,2002,,Male,Other Race,Unknown,2022-11-11,drug4,lumbar,lumbar,2022-12-25
+463422,1939,,Female,Asian,Hispanic or Latino,2022-09-15,drug5,lumbar,lumbar,2022-12-30
+425542,2000,5/10/2023,Female,Multirace,Not Hispanic or Latino,2022-10-10,drug2,thoracic,thoracic,2022-09-25
+458552,1957,,Male,White,Hispanic or Latino,2023-03-12,drug5,thoracic,thoracic,2023-04-06
+122015,1944,4/17/2023,Male,Asian,Hispanic or Latino,2022-12-10,drug4,lumbar,thoracic,2023-02-17
+505437,1940,8/12/2022,Female,Multirace,Hispanic or Latino,2023-03-18,drug5,lumbar,thoracic,2022-11-15
+923621,1964,,Male,Multirace,Not Hispanic or Latino,2022-07-30,drug3,thoracic,thoracic,2022-08-07
+313223,1994,,Female,Other Race,Not Hispanic or Latino,2023-03-04,drug6,lumbar,lumbar,2023-04-06
+343718,1970,6/4/2023,Male,Multirace,Not Hispanic or Latino,2022-08-31,drug5,lumbar,thoracic,2023-04-28
+90471,1990,7/8/2023,Female,Asian,Hispanic or Latino,2023-02-11,drug2,lumbar,lumbar,2022-08-17
+589157,1955,11/8/2022,Male,Multirace,Hispanic or Latino,2022-10-23,drug4,thoracic,lumbar,2023-06-17
+121984,1968,,Female,Multirace,Hispanic or Latino,2022-09-17,drug5,thoracic,thoracic,2022-12-30
+489973,1986,,Male,Asian,Not Hispanic or Latino,2023-01-25,drug3,thoracic,lumbar,2022-07-19
+433298,1985,1/22/2023,Male,Asian,Not Hispanic or Latino,2022-07-24,drug1,thoracic,thoracic,2022-09-27
+864049,1937,,Male,Multirace,Hispanic or Latino,2022-10-08,drug3,lumbar,thoracic,2022-08-04
+352647,2010,,Male,Multirace,Unknown,2023-02-10,drug5,lumbar,thoracic,2023-05-09
+414090,1977,,Female,White,Unknown,2023-05-09,drug1,lumbar,lumbar,2022-11-13
+340576,1973,5/10/2023,Male,Asian,Hispanic or Latino,2023-04-21,drug4,lumbar,thoracic,2022-09-29
+912110,1982,,Female,Asian,Not Hispanic or Latino,2023-04-17,drug5,thoracic,thoracic,2023-06-08
+587028,2009,,Male,Other Race,Not Hispanic or Latino,2023-01-10,drug3,thoracic,lumbar,2022-12-27
+17194,2016,7/8/2023,Male,White,Not Hispanic or Latino,2023-02-02,drug4,lumbar,lumbar,2022-09-19
+82803,2014,,Male,Other Race,Unknown,2023-06-18,drug3,thoracic,lumbar,2022-11-08
+86578,1980,11/7/2022,Female,Asian,Hispanic or Latino,2022-09-19,drug2,thoracic,lumbar,2023-01-25
+328995,1963,8/12/2022,Female,Other Race,Not Hispanic or Latino,2022-12-20,drug3,lumbar,thoracic,2023-01-18
+180042,1999,12/15/2022,Male,Asian,Unknown,2023-03-23,drug3,thoracic,lumbar,2023-04-26
+660116,2012,,Male,White,Not Hispanic or Latino,2022-08-01,drug3,thoracic,thoracic,2023-05-22
+141118,1975,6/21/2023,Male,Asian,Not Hispanic or Latino,2023-04-05,drug4,thoracic,lumbar,2023-03-05
+914630,1969,9/16/2022,Female,Multirace,Unknown,2023-07-05,drug4,lumbar,thoracic,2023-05-21
+961435,1947,5/31/2023,Male,White,Unknown,2022-11-20,drug2,lumbar,thoracic,2022-07-22
+760209,1980,,Male,Multirace,Not Hispanic or Latino,2022-07-16,drug4,thoracic,thoracic,2023-01-22
+1005526,1980,,Male,Asian,Hispanic or Latino,2023-06-26,drug5,thoracic,thoracic,2023-01-31
+253279,2005,2/16/2023,Female,White,Not Hispanic or Latino,2022-07-22,drug4,lumbar,thoracic,2022-07-21
+51164,2016,3/11/2023,Female,Multirace,Hispanic or Latino,2023-02-19,drug4,thoracic,thoracic,2023-02-14
+201421,1995,,Female,White,Hispanic or Latino,2022-12-23,drug1,lumbar,thoracic,2022-10-26
+456674,1975,5/15/2023,Female,Other Race,Unknown,2023-06-25,drug5,thoracic,lumbar,2023-07-08
+539107,1943,,Male,Multirace,Unknown,2023-03-07,drug6,thoracic,thoracic,2023-05-03
+295771,1988,11/27/2022,Male,White,Hispanic or Latino,2023-03-27,drug1,thoracic,lumbar,2023-06-10
+884013,2015,7/16/2022,Female,Multirace,Unknown,2023-07-10,drug3,lumbar,thoracic,2023-03-27
+173881,1937,,Male,White,Hispanic or Latino,2023-02-15,drug3,thoracic,thoracic,2022-10-04
+537800,2013,,Male,Multirace,Unknown,2022-12-04,drug4,lumbar,thoracic,2023-03-20
+625764,1975,10/28/2022,Female,Asian,Not Hispanic or Latino,2022-11-02,drug2,thoracic,lumbar,2023-01-31
+128991,1979,,Female,Multirace,Not Hispanic or Latino,2022-12-02,drug4,thoracic,thoracic,2023-06-09
+776038,1961,,Male,White,Not Hispanic or Latino,2022-10-04,drug4,lumbar,lumbar,2022-10-09
+373808,1950,1/17/2023,Female,White,Hispanic or Latino,2023-06-14,drug5,thoracic,lumbar,2023-02-16
+61721,1967,,Female,Asian,Hispanic or Latino,2023-04-15,drug2,thoracic,thoracic,2022-11-15
+827359,1995,,Female,Multirace,Unknown,2022-08-26,drug1,lumbar,lumbar,2022-08-02
+838010,2006,,Female,Multirace,Hispanic or Latino,2023-01-02,drug6,thoracic,thoracic,2022-10-23
+115800,1987,10/5/2022,Male,Asian,Unknown,2023-03-25,drug2,lumbar,thoracic,2022-08-04
+537325,1970,9/14/2022,Male,White,Hispanic or Latino,2022-08-09,drug5,thoracic,thoracic,2022-12-10
+277662,1944,,Male,Multirace,Not Hispanic or Latino,2023-01-14,drug6,thoracic,thoracic,2023-06-24
+619422,1969,,Male,Other Race,Not Hispanic or Latino,2022-08-10,drug6,lumbar,thoracic,2023-02-07
+111563,1939,1/3/2023,Female,White,Hispanic or Latino,2022-11-05,drug2,lumbar,thoracic,2022-12-24
+733341,2002,,Female,Asian,Not Hispanic or Latino,2022-07-23,drug6,lumbar,thoracic,2023-03-28
+862419,1971,,Female,Asian,Not Hispanic or Latino,2023-04-13,drug5,thoracic,lumbar,2023-02-09
+216123,1966,,Male,Other Race,Not Hispanic or Latino,2022-09-23,drug3,thoracic,lumbar,2023-04-01
+579574,1995,3/26/2023,Female,Asian,Not Hispanic or Latino,2023-01-24,drug3,thoracic,thoracic,2022-10-17
+277943,1955,4/19/2023,Male,White,Unknown,2023-05-28,drug5,thoracic,thoracic,2022-12-29
+627776,2012,,Male,Other Race,Hispanic or Latino,2023-01-27,drug4,lumbar,thoracic,2022-08-19
+518559,1999,,Male,Multirace,Hispanic or Latino,2023-06-05,drug3,thoracic,lumbar,2023-03-12
+1001647,1998,,Female,Other Race,Not Hispanic or Latino,2022-07-16,drug4,thoracic,thoracic,2023-02-17
+932447,1951,7/30/2022,Male,Other Race,Hispanic or Latino,2023-03-11,drug3,lumbar,thoracic,2022-09-27
+782842,1987,,Female,Other Race,Hispanic or Latino,2023-02-03,drug1,lumbar,thoracic,2023-02-25
+105849,1997,2/13/2023,Male,Asian,Not Hispanic or Latino,2022-09-27,drug2,lumbar,lumbar,2023-03-08
+853341,1992,6/15/2023,Male,Other Race,Not Hispanic or Latino,2023-07-08,drug2,thoracic,lumbar,2023-05-17
+218248,1967,,Male,Other Race,Unknown,2023-01-26,drug3,lumbar,lumbar,2023-01-17
+414871,2004,,Male,Asian,Not Hispanic or Latino,2022-09-11,drug5,lumbar,lumbar,2023-05-04
+10240,2005,12/17/2022,Female,Other Race,Hispanic or Latino,2022-10-27,drug4,thoracic,lumbar,2023-02-09
+199581,1996,6/18/2023,Male,Multirace,Unknown,2022-10-03,drug5,thoracic,thoracic,2023-02-08
+701260,1995,7/17/2022,Male,Asian,Hispanic or Latino,2022-10-03,drug1,thoracic,thoracic,2023-02-14
+905624,1999,5/9/2023,Female,Asian,Hispanic or Latino,2022-10-04,drug2,lumbar,lumbar,2022-12-11
+49689,1951,5/10/2023,Female,Asian,Unknown,2023-03-25,drug6,lumbar,lumbar,2023-04-20
+650489,2010,,Female,Other Race,Hispanic or Latino,2023-05-30,drug1,thoracic,thoracic,2022-10-14
+679560,1968,10/28/2022,Female,Multirace,Unknown,2022-08-29,drug4,lumbar,lumbar,2023-02-19
+780806,2004,,Female,Asian,Not Hispanic or Latino,2023-03-24,drug1,lumbar,lumbar,2022-10-03
+541857,1955,12/28/2022,Male,Other Race,Hispanic or Latino,2023-01-01,drug4,thoracic,lumbar,2023-07-09
+737470,2004,,Male,Multirace,Not Hispanic or Latino,2023-04-07,drug1,thoracic,thoracic,2023-03-23
+841550,1989,,Female,Asian,Unknown,2023-05-24,drug4,thoracic,thoracic,2022-12-23
+857871,1996,8/30/2022,Female,Other Race,Not Hispanic or Latino,2023-03-19,drug2,thoracic,thoracic,2022-12-12
+431820,1965,,Female,Other Race,Hispanic or Latino,2022-07-25,drug5,lumbar,thoracic,2022-08-31
+684322,1974,11/30/2022,Male,White,Unknown,2023-06-05,drug1,thoracic,lumbar,2023-04-08
+375836,2014,,Male,White,Hispanic or Latino,2022-07-21,drug5,lumbar,lumbar,2023-05-14
+735027,1990,9/4/2022,Female,Multirace,Not Hispanic or Latino,2023-06-06,drug5,thoracic,lumbar,2022-09-10
+857361,1964,1/3/2023,Female,Multirace,Unknown,2023-03-22,drug6,thoracic,thoracic,2023-03-17
+389377,1991,6/20/2023,Female,Asian,Unknown,2022-09-28,drug5,lumbar,lumbar,2022-08-28
+542865,1989,6/21/2023,Female,Multirace,Hispanic or Latino,2022-09-27,drug1,thoracic,lumbar,2023-04-09
+347578,1996,11/3/2022,Female,White,Not Hispanic or Latino,2023-04-27,drug6,lumbar,lumbar,2022-11-21
+858724,1948,,Female,White,Hispanic or Latino,2022-07-20,drug1,lumbar,lumbar,2023-05-10
+121434,1955,,Female,Asian,Hispanic or Latino,2022-12-25,drug5,lumbar,thoracic,2022-10-05
+283974,1936,12/4/2022,Female,Other Race,Unknown,2022-08-04,drug4,lumbar,lumbar,2022-08-08
+464504,1976,,Male,White,Hispanic or Latino,2022-07-30,drug4,lumbar,thoracic,2023-05-07
+493964,2008,,Female,Other Race,Hispanic or Latino,2023-02-27,drug3,thoracic,lumbar,2022-08-23
+868675,1985,,Female,Other Race,Not Hispanic or Latino,2022-12-24,drug1,thoracic,thoracic,2023-01-03
+808630,1961,,Female,Asian,Not Hispanic or Latino,2022-08-14,drug5,lumbar,lumbar,2022-12-06
+715087,2012,,Female,Other Race,Hispanic or Latino,2022-10-09,drug1,thoracic,thoracic,2023-05-29
+35070,1951,,Male,White,Unknown,2022-09-01,drug6,lumbar,lumbar,2022-09-30
+826487,1991,6/22/2023,Male,Other Race,Hispanic or Latino,2023-06-24,drug1,thoracic,thoracic,2022-10-13
+24741,1985,8/16/2022,Female,White,Unknown,2023-06-24,drug6,lumbar,thoracic,2022-09-09
+702210,1960,,Female,Other Race,Unknown,2023-03-16,drug3,lumbar,lumbar,2022-11-28
+917787,1941,4/16/2023,Female,Multirace,Not Hispanic or Latino,2023-06-14,drug1,thoracic,lumbar,2022-11-07
+464631,2016,4/24/2023,Male,Asian,Hispanic or Latino,2023-05-01,drug5,thoracic,lumbar,2023-05-15
+18232,1959,5/3/2023,Female,Other Race,Hispanic or Latino,2023-07-09,drug3,lumbar,thoracic,2022-08-25
+650941,1987,1/5/2023,Female,Asian,Hispanic or Latino,2023-05-25,drug5,lumbar,lumbar,2022-08-01
+988562,1970,8/4/2022,Male,White,Unknown,2023-06-13,drug3,lumbar,thoracic,2022-11-15
+256242,2014,1/11/2023,Male,Other Race,Unknown,2022-08-04,drug2,lumbar,lumbar,2023-07-07
+92417,2010,,Female,White,Hispanic or Latino,2023-02-12,drug5,lumbar,thoracic,2022-09-24
+535189,2006,,Female,Multirace,Not Hispanic or Latino,2022-10-28,drug5,thoracic,thoracic,2023-01-15
+276622,1943,,Female,Multirace,Not Hispanic or Latino,2023-01-10,drug1,lumbar,thoracic,2023-01-30
+775558,1977,,Female,Other Race,Hispanic or Latino,2023-05-01,drug3,thoracic,lumbar,2022-10-21
+215746,1942,,Male,White,Not Hispanic or Latino,2023-02-15,drug1,lumbar,thoracic,2022-12-12
+604196,1934,7/13/2022,Male,White,Not Hispanic or Latino,2023-03-11,drug3,lumbar,thoracic,2023-06-08
+524597,1981,4/3/2023,Female,Multirace,Unknown,2022-11-10,drug5,thoracic,lumbar,2023-05-27
+342444,1935,,Male,Asian,Unknown,2022-09-20,drug3,lumbar,thoracic,2023-01-03
+646463,1984,8/24/2022,Male,Multirace,Hispanic or Latino,2022-12-30,drug2,lumbar,lumbar,2022-11-06
+444672,1943,10/31/2022,Male,Asian,Unknown,2023-07-02,drug3,thoracic,lumbar,2022-10-24
+598511,1963,9/29/2022,Female,Other Race,Hispanic or Latino,2022-08-14,drug2,thoracic,thoracic,2023-05-07
+966455,1990,,Female,Other Race,Hispanic or Latino,2023-06-27,drug5,lumbar,lumbar,2023-02-17
+380581,2007,11/4/2022,Male,Other Race,Hispanic or Latino,2023-07-01,drug2,lumbar,lumbar,2023-05-26
+791555,1984,1/28/2023,Male,White,Not Hispanic or Latino,2023-04-08,drug6,lumbar,lumbar,2023-03-16
+176375,1971,,Male,Other Race,Hispanic or Latino,2022-11-05,drug5,thoracic,lumbar,2022-08-21
+823295,1983,,Female,Other Race,Hispanic or Latino,2023-05-29,drug3,thoracic,lumbar,2022-09-10
+691098,2014,,Male,Asian,Not Hispanic or Latino,2022-12-16,drug2,lumbar,lumbar,2022-12-23
+147596,1999,5/6/2023,Male,Other Race,Unknown,2022-11-07,drug4,thoracic,thoracic,2022-09-09
+216140,1984,6/12/2023,Male,Multirace,Not Hispanic or Latino,2023-01-25,drug4,lumbar,lumbar,2023-05-17
+337991,2014,,Female,Multirace,Hispanic or Latino,2022-07-15,drug1,lumbar,lumbar,2023-06-08
+190792,1979,12/22/2022,Female,Asian,Unknown,2022-10-10,drug3,thoracic,thoracic,2023-01-26
+44832,1961,,Female,Multirace,Unknown,2023-02-03,drug5,lumbar,lumbar,2022-09-13
+978571,1980,2/23/2023,Male,White,Hispanic or Latino,2023-03-31,drug3,lumbar,lumbar,2023-05-14
+476709,1958,,Male,Multirace,Hispanic or Latino,2022-08-05,drug4,thoracic,lumbar,2023-03-03
+370375,1997,12/17/2022,Male,Asian,Not Hispanic or Latino,2023-04-22,drug1,thoracic,lumbar,2022-11-22
+112148,1991,,Male,Asian,Not Hispanic or Latino,2022-12-23,drug4,thoracic,thoracic,2023-01-02
+411169,1960,3/7/2023,Male,Asian,Hispanic or Latino,2022-08-21,drug2,lumbar,thoracic,2023-06-23
+380196,1952,5/26/2023,Female,White,Hispanic or Latino,2023-04-10,drug2,lumbar,thoracic,2023-06-05
+986951,1962,,Female,Multirace,Unknown,2023-05-11,drug4,lumbar,thoracic,2022-12-15
+771950,1946,,Female,Multirace,Hispanic or Latino,2022-07-26,drug5,thoracic,lumbar,2022-11-16
+919009,2015,,Female,Multirace,Not Hispanic or Latino,2023-02-23,drug6,lumbar,thoracic,2023-01-01
+52122,1992,,Female,Multirace,Hispanic or Latino,2022-08-19,drug6,lumbar,thoracic,2022-09-05
+479781,1974,,Female,Multirace,Hispanic or Latino,2023-01-01,drug3,lumbar,thoracic,2022-11-01
+443719,1992,,Male,White,Unknown,2022-11-26,drug1,lumbar,lumbar,2022-12-11
+143404,1956,12/2/2022,Male,Multirace,Hispanic or Latino,2023-01-06,drug6,thoracic,thoracic,2023-05-13
+904598,2001,9/26/2022,Female,Asian,Not Hispanic or Latino,2022-11-21,drug6,lumbar,thoracic,2023-04-02
+381014,1961,,Male,Multirace,Hispanic or Latino,2023-01-06,drug2,thoracic,lumbar,2022-12-25
+368523,1935,,Female,Multirace,Hispanic or Latino,2022-12-02,drug6,thoracic,thoracic,2023-01-04
+138808,2004,,Female,Multirace,Not Hispanic or Latino,2022-11-22,drug5,thoracic,thoracic,2022-10-22
+303648,2015,,Male,White,Not Hispanic or Latino,2022-10-14,drug4,lumbar,thoracic,2022-08-18
+522449,1934,7/1/2023,Male,Other Race,Hispanic or Latino,2023-03-16,drug5,lumbar,thoracic,2022-09-24
+840673,1960,11/19/2022,Male,Multirace,Hispanic or Latino,2022-07-17,drug2,lumbar,lumbar,2023-06-13
+984285,1943,10/18/2022,Female,Other Race,Not Hispanic or Latino,2023-03-15,drug4,thoracic,lumbar,2023-01-17
+311488,1945,,Male,White,Hispanic or Latino,2022-08-19,drug2,thoracic,thoracic,2023-04-17
+311582,2003,8/19/2022,Female,White,Hispanic or Latino,2023-03-31,drug3,lumbar,thoracic,2023-04-10
+212726,1937,,Male,Asian,Unknown,2022-12-10,drug2,lumbar,lumbar,2022-09-08
+954225,1941,9/5/2022,Female,Multirace,Not Hispanic or Latino,2023-05-07,drug4,lumbar,thoracic,2022-09-21
+407221,1956,,Male,White,Hispanic or Latino,2023-05-11,drug2,thoracic,thoracic,2023-02-08
+841026,1958,6/19/2023,Male,Multirace,Unknown,2023-05-30,drug5,thoracic,lumbar,2023-05-09
+193425,1942,1/23/2023,Female,Asian,Unknown,2022-10-15,drug4,thoracic,lumbar,2023-05-23
+731505,2016,12/6/2022,Female,Other Race,Unknown,2022-11-13,drug3,lumbar,thoracic,2023-05-07
+544086,1945,,Male,Asian,Unknown,2022-08-24,drug1,thoracic,thoracic,2022-08-25
+550827,1953,,Female,Other Race,Unknown,2023-03-24,drug3,thoracic,lumbar,2023-01-19
+374573,1966,,Male,Multirace,Not Hispanic or Latino,2022-08-27,drug1,thoracic,thoracic,2023-03-18
+840591,2011,6/11/2023,Female,White,Unknown,2022-09-01,drug1,thoracic,lumbar,2022-11-06
+90214,1947,,Male,Asian,Unknown,2022-07-20,drug4,lumbar,thoracic,2023-04-17
+914028,1963,3/22/2023,Female,White,Hispanic or Latino,2022-08-26,drug5,lumbar,lumbar,2023-01-28
+608198,1971,12/18/2022,Male,Multirace,Hispanic or Latino,2022-12-09,drug5,lumbar,lumbar,2023-04-05
+725970,1958,11/6/2022,Male,Multirace,Not Hispanic or Latino,2022-07-20,drug1,thoracic,thoracic,2023-02-18
+245518,2002,8/2/2022,Female,Asian,Unknown,2023-05-08,drug1,thoracic,thoracic,2022-12-18
+819210,1997,7/6/2023,Female,Asian,Unknown,2023-01-17,drug4,lumbar,thoracic,2023-02-21
+345211,2009,,Female,Multirace,Hispanic or Latino,2023-06-27,drug4,lumbar,lumbar,2022-11-04
+227475,1948,9/10/2022,Male,Asian,Unknown,2023-04-22,drug6,thoracic,lumbar,2022-11-26
+254600,1950,,Male,Multirace,Not Hispanic or Latino,2023-05-05,drug1,thoracic,lumbar,2023-06-02
+497492,1953,7/21/2022,Female,Other Race,Unknown,2023-01-21,drug1,thoracic,lumbar,2022-10-30
+82540,1974,2/19/2023,Male,Other Race,Unknown,2022-09-04,drug2,thoracic,lumbar,2023-05-18
+15005,1951,9/12/2022,Female,Asian,Hispanic or Latino,2023-04-03,drug6,lumbar,thoracic,2022-07-14
+780143,1935,,Female,Other Race,Not Hispanic or Latino,2022-08-10,drug5,lumbar,lumbar,2023-01-27
+476437,2015,2/25/2023,Female,Multirace,Not Hispanic or Latino,2022-09-18,drug2,lumbar,thoracic,2022-12-25
+364419,2006,2/16/2023,Female,Other Race,Hispanic or Latino,2022-10-04,drug4,thoracic,thoracic,2023-01-18
+434474,1999,,Male,Asian,Unknown,2023-04-13,drug3,lumbar,thoracic,2022-09-02
+858908,2005,,Male,Asian,Unknown,2022-10-24,drug1,thoracic,thoracic,2023-03-29
+283521,1969,,Male,Other Race,Unknown,2023-03-29,drug1,lumbar,thoracic,2023-03-14
+883704,2002,,Female,Asian,Hispanic or Latino,2023-01-11,drug4,lumbar,thoracic,2022-07-22
+146510,1964,,Female,Asian,Hispanic or Latino,2023-04-13,drug6,lumbar,thoracic,2023-03-02
+956161,1951,7/26/2022,Female,Multirace,Unknown,2022-07-27,drug3,thoracic,thoracic,2022-07-12
+785998,1972,,Female,Other Race,Unknown,2023-06-25,drug4,lumbar,lumbar,2022-12-06
+859279,1980,,Female,Multirace,Hispanic or Latino,2023-04-26,drug5,lumbar,thoracic,2023-02-14
+804824,2004,,Male,Multirace,Hispanic or Latino,2023-06-06,drug6,thoracic,lumbar,2022-07-19
+113345,1936,2/16/2023,Male,Multirace,Not Hispanic or Latino,2022-11-09,drug5,thoracic,thoracic,2022-07-15
+834476,1946,,Female,Asian,Not Hispanic or Latino,2023-02-28,drug3,lumbar,thoracic,2023-01-27
+123738,1942,5/2/2023,Female,Other Race,Unknown,2023-01-07,drug6,thoracic,lumbar,2023-06-11
+80268,1936,7/8/2023,Female,White,Not Hispanic or Latino,2022-08-28,drug3,thoracic,thoracic,2023-03-27
+374508,1944,,Female,Asian,Not Hispanic or Latino,2022-11-04,drug5,lumbar,lumbar,2022-09-20
+944873,2015,,Male,Other Race,Hispanic or Latino,2023-05-03,drug5,lumbar,thoracic,2023-05-07
+508356,1991,,Male,Other Race,Not Hispanic or Latino,2023-02-26,drug1,thoracic,thoracic,2023-07-04
+476856,1935,1/19/2023,Female,Multirace,Not Hispanic or Latino,2023-06-27,drug2,thoracic,lumbar,2022-08-21
+823013,1978,,Male,Asian,Unknown,2022-09-26,drug6,thoracic,lumbar,2022-08-20
+58826,2010,,Male,Other Race,Hispanic or Latino,2023-02-17,drug2,thoracic,lumbar,2023-06-22
+721663,1947,4/30/2023,Male,White,Hispanic or Latino,2023-01-11,drug6,thoracic,lumbar,2023-05-30
+810320,1963,3/18/2023,Male,White,Hispanic or Latino,2023-02-17,drug3,lumbar,thoracic,2023-06-09
+285424,1985,,Female,Asian,Hispanic or Latino,2022-09-05,drug6,thoracic,thoracic,2023-02-17
+163136,1969,9/18/2022,Male,White,Not Hispanic or Latino,2023-04-04,drug3,thoracic,lumbar,2023-04-25
+649033,1960,,Male,White,Unknown,2023-02-21,drug2,thoracic,lumbar,2022-09-14
+533309,1995,2/11/2023,Male,Multirace,Hispanic or Latino,2023-06-08,drug1,thoracic,lumbar,2023-04-20
+871043,1945,,Male,Other Race,Hispanic or Latino,2023-01-09,drug1,thoracic,thoracic,2023-07-10
+71140,1959,9/21/2022,Male,Multirace,Not Hispanic or Latino,2022-11-07,drug3,lumbar,thoracic,2022-10-17
+499167,1986,11/18/2022,Male,Asian,Hispanic or Latino,2022-10-10,drug3,thoracic,lumbar,2023-03-20
+974618,2003,11/13/2022,Female,Multirace,Hispanic or Latino,2022-12-15,drug3,lumbar,thoracic,2022-10-31
+448436,2011,,Female,Multirace,Unknown,2022-12-08,drug5,lumbar,lumbar,2023-03-17
+935272,1962,,Female,Multirace,Unknown,2023-04-13,drug4,lumbar,thoracic,2023-03-08
+483501,1983,12/31/2022,Male,White,Hispanic or Latino,2022-12-24,drug5,lumbar,thoracic,2022-11-02
+602722,1979,12/8/2022,Female,Other Race,Hispanic or Latino,2023-04-05,drug4,lumbar,lumbar,2023-01-14
+106371,2000,,Male,Asian,Not Hispanic or Latino,2023-01-29,drug5,lumbar,thoracic,2023-01-26
+928318,1961,,Female,Other Race,Hispanic or Latino,2023-03-04,drug5,thoracic,lumbar,2023-03-29
+998078,1946,,Female,Other Race,Unknown,2022-10-23,drug2,thoracic,lumbar,2022-11-04
+111613,1989,,Female,Multirace,Unknown,2023-05-27,drug5,lumbar,lumbar,2022-10-15
+769448,1948,,Female,Multirace,Not Hispanic or Latino,2022-11-02,drug2,lumbar,lumbar,2023-05-11
+840558,1972,11/15/2022,Male,Other Race,Not Hispanic or Latino,2023-03-10,drug6,lumbar,lumbar,2022-12-13
+60110,1949,10/12/2022,Female,Multirace,Hispanic or Latino,2022-12-22,drug2,lumbar,lumbar,2023-04-22
+302876,2002,2/22/2023,Female,Asian,Unknown,2023-06-04,drug4,lumbar,lumbar,2022-09-09
+948811,1959,9/23/2022,Female,White,Unknown,2022-08-11,drug3,lumbar,lumbar,2023-07-11
+840523,2008,,Male,White,Hispanic or Latino,2023-03-22,drug4,thoracic,thoracic,2022-10-07
+238618,1941,,Female,Other Race,Unknown,2023-07-05,drug2,lumbar,thoracic,2023-06-10
+272163,1958,,Female,Other Race,Not Hispanic or Latino,2022-08-06,drug3,lumbar,lumbar,2023-05-16
+268557,1972,9/15/2022,Female,White,Unknown,2022-12-06,drug1,thoracic,lumbar,2023-03-14
+799405,1942,,Male,Asian,Not Hispanic or Latino,2022-09-07,drug3,thoracic,lumbar,2023-05-07
+556599,1984,,Male,Multirace,Not Hispanic or Latino,2023-06-29,drug1,lumbar,thoracic,2022-11-08
+826312,1955,,Male,White,Not Hispanic or Latino,2022-11-12,drug5,lumbar,lumbar,2023-04-15
+193693,1935,,Female,Multirace,Unknown,2022-10-11,drug4,lumbar,thoracic,2023-03-18
+411734,1966,3/18/2023,Male,White,Hispanic or Latino,2023-05-24,drug3,thoracic,lumbar,2023-05-31
+168527,1959,6/13/2023,Male,White,Hispanic or Latino,2023-01-08,drug6,lumbar,thoracic,2023-06-22
+730438,1985,1/14/2023,Male,Other Race,Not Hispanic or Latino,2023-04-02,drug1,thoracic,thoracic,2023-03-01
+9440,1964,5/29/2023,Female,Asian,Hispanic or Latino,2022-11-07,drug3,thoracic,lumbar,2022-12-30
+115313,1959,4/11/2023,Male,Asian,Not Hispanic or Latino,2022-11-07,drug6,lumbar,lumbar,2023-06-26
+134586,1988,,Male,Asian,Not Hispanic or Latino,2022-11-25,drug5,thoracic,lumbar,2022-10-17
+324987,1960,4/3/2023,Male,Multirace,Unknown,2023-04-02,drug6,lumbar,lumbar,2022-12-25
+96197,1970,10/31/2022,Female,Multirace,Not Hispanic or Latino,2022-10-03,drug2,thoracic,lumbar,2022-11-13
+460204,1955,,Male,Multirace,Not Hispanic or Latino,2023-06-17,drug6,lumbar,thoracic,2023-03-12
+796096,2017,,Female,Multirace,Hispanic or Latino,2022-11-29,drug1,thoracic,lumbar,2023-02-09
+975999,1972,8/7/2022,Male,Multirace,Hispanic or Latino,2022-11-07,drug6,lumbar,lumbar,2023-06-17
+475604,1998,,Female,Asian,Hispanic or Latino,2022-08-20,drug5,lumbar,lumbar,2023-04-25
+1001851,1959,,Female,Multirace,Unknown,2023-01-01,drug2,thoracic,thoracic,2022-09-23
+306637,2017,11/27/2022,Male,White,Hispanic or Latino,2023-06-19,drug4,lumbar,thoracic,2023-04-10
+450163,2007,,Male,Asian,Hispanic or Latino,2023-01-27,drug6,lumbar,thoracic,2022-10-15
+856085,1942,8/10/2022,Female,Asian,Unknown,2023-01-29,drug1,lumbar,thoracic,2022-09-27
+949607,1969,,Male,White,Unknown,2023-03-26,drug1,lumbar,thoracic,2022-09-03
+273492,1973,1/22/2023,Female,Other Race,Not Hispanic or Latino,2022-12-08,drug2,thoracic,lumbar,2023-04-21
+118717,1942,,Female,Other Race,Not Hispanic or Latino,2022-08-28,drug5,lumbar,thoracic,2023-05-21
+49785,2015,7/17/2022,Female,Asian,Not Hispanic or Latino,2023-02-13,drug4,lumbar,lumbar,2023-03-17
+605151,1942,4/23/2023,Male,Asian,Unknown,2023-06-18,drug3,thoracic,thoracic,2023-05-22
+675234,1996,4/21/2023,Male,White,Unknown,2023-03-24,drug5,thoracic,lumbar,2022-08-16
+84564,1950,8/16/2022,Female,Other Race,Hispanic or Latino,2023-03-01,drug2,lumbar,lumbar,2022-07-12
+532837,2011,,Female,Multirace,Hispanic or Latino,2022-12-29,drug4,thoracic,lumbar,2023-01-26
+448520,2015,8/4/2022,Female,White,Hispanic or Latino,2022-10-29,drug6,lumbar,thoracic,2023-06-10
+985225,1992,,Female,White,Not Hispanic or Latino,2022-08-02,drug5,lumbar,lumbar,2022-08-13
+440570,1937,,Female,Asian,Hispanic or Latino,2022-10-15,drug4,thoracic,thoracic,2022-10-13
+527034,1984,7/12/2022,Male,Asian,Unknown,2023-02-02,drug4,thoracic,lumbar,2023-06-04
+900953,1952,,Female,Other Race,Hispanic or Latino,2023-06-04,drug5,thoracic,thoracic,2023-06-30
+176617,2014,,Female,White,Hispanic or Latino,2022-09-18,drug5,thoracic,thoracic,2023-06-02
+325923,2013,7/27/2022,Male,Other Race,Not Hispanic or Latino,2022-12-11,drug2,thoracic,thoracic,2022-07-19
+204061,1958,,Female,White,Hispanic or Latino,2023-01-08,drug1,lumbar,lumbar,2022-07-13
+181410,1986,10/20/2022,Female,Asian,Unknown,2023-01-03,drug4,thoracic,thoracic,2022-10-11
+360124,1999,,Female,White,Unknown,2023-03-04,drug2,lumbar,thoracic,2023-02-02
+418699,1944,,Male,Multirace,Not Hispanic or Latino,2023-01-27,drug1,thoracic,lumbar,2023-01-03
+112707,1938,,Male,White,Not Hispanic or Latino,2022-11-24,drug6,thoracic,thoracic,2023-06-25
+967542,1990,12/7/2022,Male,Multirace,Hispanic or Latino,2022-07-17,drug2,lumbar,thoracic,2022-07-15
+644160,1996,,Female,Multirace,Not Hispanic or Latino,2023-03-23,drug3,thoracic,lumbar,2023-01-16
+245467,2009,7/15/2022,Female,White,Hispanic or Latino,2022-07-18,drug5,thoracic,lumbar,2023-02-02
+103020,1985,,Male,Multirace,Not Hispanic or Latino,2022-10-25,drug1,lumbar,thoracic,2023-03-13
+698231,1956,6/13/2023,Female,Other Race,Unknown,2023-06-28,drug5,lumbar,lumbar,2022-09-20
+691851,1942,,Female,Multirace,Unknown,2023-04-11,drug3,lumbar,lumbar,2023-04-22
+602836,2002,10/26/2022,Male,Other Race,Hispanic or Latino,2022-10-17,drug3,thoracic,lumbar,2022-07-24
+208366,1977,1/7/2023,Male,White,Unknown,2022-07-20,drug1,lumbar,thoracic,2023-02-08
+97767,1976,,Female,Asian,Not Hispanic or Latino,2023-01-20,drug2,lumbar,thoracic,2022-11-08
+982758,1950,6/11/2023,Female,Other Race,Unknown,2022-12-24,drug4,lumbar,lumbar,2022-09-28
+942118,1997,,Female,Other Race,Not Hispanic or Latino,2023-01-21,drug4,thoracic,thoracic,2022-12-10
+607672,1998,6/4/2023,Male,Asian,Hispanic or Latino,2022-11-09,drug6,lumbar,thoracic,2022-10-25
+529687,1994,,Male,Multirace,Unknown,2023-02-03,drug3,thoracic,thoracic,2022-10-10
+874530,1946,,Female,White,Hispanic or Latino,2023-01-22,drug5,lumbar,lumbar,2022-09-09
+215099,1950,9/15/2022,Male,Asian,Not Hispanic or Latino,2022-09-20,drug6,thoracic,thoracic,2023-04-17
+557820,2007,12/28/2022,Male,White,Unknown,2022-09-27,drug5,lumbar,thoracic,2023-06-15
+230000,1964,,Female,Asian,Unknown,2022-11-06,drug6,lumbar,thoracic,2022-09-20
+571904,2008,4/30/2023,Male,Other Race,Unknown,2023-07-06,drug1,thoracic,lumbar,2023-06-24
+518832,2008,9/21/2022,Male,Multirace,Hispanic or Latino,2022-09-09,drug4,thoracic,thoracic,2022-12-10
+947727,1937,2/25/2023,Male,Multirace,Not Hispanic or Latino,2023-04-06,drug6,lumbar,thoracic,2023-03-10
+75195,1998,,Female,Multirace,Unknown,2022-11-20,drug3,thoracic,thoracic,2023-02-16
+97244,1967,,Female,Other Race,Hispanic or Latino,2022-07-12,drug1,lumbar,thoracic,2022-07-18
+268264,1992,,Male,Multirace,Not Hispanic or Latino,2022-09-14,drug4,thoracic,thoracic,2023-03-09
+813721,1936,6/6/2023,Female,Asian,Unknown,2023-04-05,drug6,lumbar,lumbar,2023-01-07
+156364,1989,8/31/2022,Female,Multirace,Not Hispanic or Latino,2022-10-18,drug3,thoracic,thoracic,2022-10-15
+483346,1977,,Male,White,Hispanic or Latino,2023-06-09,drug1,thoracic,lumbar,2022-09-02
+930549,1944,,Male,Asian,Unknown,2022-12-02,drug2,lumbar,lumbar,2023-03-13
+392392,1993,,Male,White,Not Hispanic or Latino,2023-01-03,drug6,thoracic,thoracic,2023-04-16
+771088,1998,5/14/2023,Female,White,Hispanic or Latino,2022-11-14,drug6,lumbar,lumbar,2022-11-13
+211959,1973,2/28/2023,Male,Asian,Unknown,2023-07-05,drug2,thoracic,thoracic,2022-12-19
+268623,1980,3/25/2023,Male,Multirace,Unknown,2022-11-10,drug2,lumbar,lumbar,2022-08-17
+993789,2010,7/5/2023,Male,Multirace,Not Hispanic or Latino,2022-10-27,drug6,lumbar,lumbar,2023-01-09
+450073,1949,9/14/2022,Male,Multirace,Not Hispanic or Latino,2023-02-24,drug5,lumbar,thoracic,2023-05-28
+274461,1964,,Female,Other Race,Unknown,2023-07-10,drug4,lumbar,thoracic,2022-12-06
+538981,1990,5/28/2023,Male,Other Race,Unknown,2022-12-07,drug5,lumbar,thoracic,2023-06-21
+3512,2015,,Female,Multirace,Not Hispanic or Latino,2023-03-02,drug3,lumbar,lumbar,2022-08-25
+16225,1995,2/4/2023,Male,Asian,Not Hispanic or Latino,2023-04-02,drug6,thoracic,lumbar,2023-04-08
+685123,1972,,Female,White,Unknown,2023-04-11,drug5,lumbar,thoracic,2022-09-01
+405967,2016,4/4/2023,Male,Multirace,Hispanic or Latino,2023-04-16,drug1,thoracic,lumbar,2022-09-02
+748165,1979,,Male,Asian,Not Hispanic or Latino,2022-12-21,drug2,lumbar,lumbar,2022-10-28
+756798,1941,11/6/2022,Female,Other Race,Hispanic or Latino,2022-08-30,drug5,lumbar,thoracic,2022-10-08
+155249,2001,,Female,Asian,Hispanic or Latino,2022-11-05,drug6,thoracic,thoracic,2022-08-26
+820347,1936,3/20/2023,Male,Other Race,Hispanic or Latino,2022-11-11,drug2,thoracic,thoracic,2023-06-05
+818668,1959,2/7/2023,Male,Other Race,Hispanic or Latino,2023-02-19,drug2,lumbar,thoracic,2022-12-13
+314821,1991,11/27/2022,Male,White,Not Hispanic or Latino,2022-09-03,drug6,thoracic,thoracic,2022-10-17
+771475,2014,,Male,White,Not Hispanic or Latino,2022-10-16,drug2,thoracic,thoracic,2023-04-21
+591611,2014,,Female,Multirace,Hispanic or Latino,2023-03-20,drug4,lumbar,lumbar,2022-12-31
+632378,2011,6/25/2023,Female,Other Race,Hispanic or Latino,2023-06-19,drug6,thoracic,lumbar,2022-08-14
+446210,1939,,Male,Asian,Unknown,2023-06-15,drug2,thoracic,lumbar,2022-07-26
+557361,1978,12/27/2022,Female,Other Race,Not Hispanic or Latino,2022-10-08,drug4,lumbar,lumbar,2023-01-28
+449777,1992,,Male,Other Race,Not Hispanic or Latino,2023-03-11,drug2,thoracic,thoracic,2023-04-19
+169493,1957,8/15/2022,Female,Multirace,Hispanic or Latino,2022-08-05,drug2,thoracic,thoracic,2022-10-27
+517927,2002,,Female,Multirace,Hispanic or Latino,2023-05-26,drug2,lumbar,lumbar,2022-07-19
+884820,2006,,Female,White,Not Hispanic or Latino,2022-11-04,drug2,lumbar,thoracic,2022-09-06
+142342,1948,11/26/2022,Female,White,Not Hispanic or Latino,2023-06-25,drug5,thoracic,lumbar,2023-02-02
+726538,1943,1/7/2023,Male,Other Race,Not Hispanic or Latino,2022-09-13,drug5,lumbar,thoracic,2023-06-11
+433080,1942,,Male,Other Race,Hispanic or Latino,2023-02-25,drug6,lumbar,lumbar,2023-04-11
+340458,1966,,Female,White,Not Hispanic or Latino,2023-02-26,drug2,thoracic,lumbar,2023-05-23
+36605,1960,,Female,White,Hispanic or Latino,2022-07-27,drug6,thoracic,thoracic,2022-09-04
+6321,1938,6/20/2023,Male,Multirace,Unknown,2023-05-20,drug2,thoracic,thoracic,2022-10-23
+743960,1951,2/20/2023,Female,Asian,Not Hispanic or Latino,2023-04-19,drug2,lumbar,thoracic,2023-06-08
+622604,1954,10/8/2022,Female,Other Race,Not Hispanic or Latino,2022-11-10,drug6,thoracic,lumbar,2023-03-01
+906099,1939,,Male,Multirace,Unknown,2023-05-14,drug4,lumbar,lumbar,2022-09-26
+555863,2000,,Female,Other Race,Unknown,2023-04-03,drug5,lumbar,thoracic,2023-02-07
+180157,1987,10/9/2022,Male,Other Race,Hispanic or Latino,2023-06-27,drug3,thoracic,thoracic,2023-03-17
+156449,2000,,Female,Asian,Unknown,2022-12-25,drug6,thoracic,lumbar,2023-05-23
+59885,1970,,Male,White,Hispanic or Latino,2023-01-17,drug4,thoracic,thoracic,2023-03-19
+998161,2008,,Female,White,Not Hispanic or Latino,2023-01-30,drug3,lumbar,lumbar,2022-08-19
+204431,1942,,Male,Asian,Hispanic or Latino,2023-04-29,drug6,lumbar,lumbar,2023-01-28
+299660,1974,,Male,White,Not Hispanic or Latino,2022-10-09,drug5,lumbar,thoracic,2023-05-08
+114445,1938,9/3/2022,Male,Multirace,Unknown,2023-05-03,drug1,thoracic,lumbar,2023-03-29
+452718,1989,,Male,Other Race,Not Hispanic or Latino,2022-12-24,drug5,lumbar,thoracic,2023-06-22
+638811,1981,,Male,Multirace,Unknown,2022-12-11,drug3,lumbar,thoracic,2023-01-31
+44799,1976,,Male,Multirace,Unknown,2023-02-09,drug3,thoracic,thoracic,2022-08-20
+786183,1937,5/17/2023,Male,Multirace,Not Hispanic or Latino,2022-11-12,drug5,thoracic,lumbar,2023-01-23
+346256,1936,,Female,Asian,Unknown,2023-04-02,drug3,lumbar,thoracic,2022-12-14
+669413,1952,11/30/2022,Female,White,Hispanic or Latino,2022-11-29,drug1,lumbar,thoracic,2023-01-14
+771711,1951,,Male,Asian,Not Hispanic or Latino,2023-01-13,drug1,lumbar,lumbar,2023-03-27
+215318,1970,,Male,Multirace,Hispanic or Latino,2023-04-01,drug3,lumbar,thoracic,2023-03-21
+551710,1987,,Female,Other Race,Hispanic or Latino,2022-09-29,drug5,thoracic,thoracic,2023-04-28
+639884,1995,,Female,Multirace,Hispanic or Latino,2023-05-28,drug3,lumbar,lumbar,2023-07-01
+746946,2014,,Male,Other Race,Unknown,2022-07-16,drug3,lumbar,thoracic,2023-07-07
+21294,2016,,Male,Multirace,Not Hispanic or Latino,2023-06-29,drug6,lumbar,thoracic,2023-02-20
+265969,1999,,Female,Asian,Hispanic or Latino,2022-11-14,drug1,lumbar,thoracic,2023-05-28
+949157,1979,,Female,Asian,Hispanic or Latino,2022-07-24,drug3,thoracic,thoracic,2023-06-30
+881316,1989,5/14/2023,Female,White,Unknown,2023-02-02,drug4,thoracic,thoracic,2022-10-15
+362111,1955,,Female,White,Not Hispanic or Latino,2022-09-25,drug1,thoracic,thoracic,2022-07-13
+596525,1971,,Male,Multirace,Hispanic or Latino,2022-12-21,drug6,thoracic,lumbar,2023-05-08
+317732,1962,,Female,Asian,Unknown,2022-07-19,drug4,lumbar,thoracic,2022-09-04
+866734,1941,3/31/2023,Male,Other Race,Unknown,2022-10-23,drug2,thoracic,lumbar,2023-06-20
+117475,1939,,Female,Multirace,Unknown,2022-12-14,drug6,thoracic,lumbar,2022-10-11
+244948,1977,9/6/2022,Female,Multirace,Hispanic or Latino,2023-01-20,drug5,thoracic,lumbar,2022-12-02
+584363,1959,5/29/2023,Male,Asian,Unknown,2023-01-31,drug5,thoracic,lumbar,2023-07-07
+590742,1962,,Male,White,Unknown,2022-09-20,drug2,lumbar,lumbar,2023-02-25
+990638,1968,2/22/2023,Female,Asian,Not Hispanic or Latino,2022-11-13,drug1,thoracic,thoracic,2022-11-29
+545856,1940,9/24/2022,Female,Other Race,Hispanic or Latino,2023-04-05,drug5,lumbar,lumbar,2022-08-17
+531247,2010,,Female,Multirace,Not Hispanic or Latino,2023-06-21,drug2,lumbar,lumbar,2022-12-14
+100519,1979,,Female,Multirace,Not Hispanic or Latino,2023-04-24,drug1,thoracic,thoracic,2022-11-04
+487006,1952,,Female,Other Race,Not Hispanic or Latino,2023-01-21,drug2,lumbar,lumbar,2022-07-25
+562489,1983,,Female,Other Race,Not Hispanic or Latino,2022-08-30,drug2,thoracic,thoracic,2023-01-30
+590324,1940,10/14/2022,Male,White,Hispanic or Latino,2022-08-28,drug6,thoracic,lumbar,2023-07-04
+644888,1990,11/4/2022,Female,Asian,Unknown,2022-08-29,drug6,lumbar,thoracic,2023-02-27
+646999,1960,,Male,White,Hispanic or Latino,2023-02-08,drug1,lumbar,lumbar,2023-04-04
+952743,1968,,Female,Other Race,Hispanic or Latino,2023-05-13,drug1,thoracic,thoracic,2023-05-23
+423808,1991,,Male,Other Race,Not Hispanic or Latino,2022-12-20,drug4,lumbar,thoracic,2023-03-19
+698436,1955,,Male,Multirace,Unknown,2023-04-01,drug3,lumbar,thoracic,2023-05-28
+862961,1964,,Female,Asian,Unknown,2022-09-09,drug6,thoracic,lumbar,2022-12-11
+752180,1998,,Female,Other Race,Hispanic or Latino,2023-02-18,drug6,thoracic,thoracic,2022-12-24
+494591,1947,3/16/2023,Female,Multirace,Not Hispanic or Latino,2023-03-19,drug2,thoracic,thoracic,2022-07-15
+173044,1943,3/25/2023,Female,Asian,Hispanic or Latino,2023-05-25,drug3,lumbar,thoracic,2023-05-12
+876116,1943,5/7/2023,Male,White,Not Hispanic or Latino,2022-07-13,drug2,lumbar,thoracic,2022-12-30
+933344,1994,,Male,Multirace,Not Hispanic or Latino,2022-12-06,drug4,lumbar,lumbar,2023-05-02
+692026,2003,,Male,Other Race,Hispanic or Latino,2023-01-07,drug6,thoracic,thoracic,2022-08-08
+104692,1983,9/25/2022,Female,White,Unknown,2022-07-29,drug6,lumbar,lumbar,2022-08-01
+557758,1967,,Female,Other Race,Unknown,2023-02-23,drug6,lumbar,lumbar,2023-06-19
+783863,1972,,Male,Asian,Unknown,2022-09-07,drug3,lumbar,thoracic,2023-02-17
+727818,1943,5/4/2023,Female,White,Not Hispanic or Latino,2023-05-20,drug1,lumbar,thoracic,2022-11-05
+841388,1959,3/2/2023,Female,Multirace,Not Hispanic or Latino,2022-08-13,drug6,lumbar,thoracic,2023-05-11
+499053,1943,,Male,Multirace,Unknown,2022-11-07,drug1,lumbar,thoracic,2023-04-29
+505055,2014,,Female,White,Hispanic or Latino,2022-10-01,drug6,lumbar,thoracic,2022-12-08
+104913,1985,,Female,Other Race,Not Hispanic or Latino,2023-05-23,drug4,thoracic,thoracic,2023-03-05
+599577,2006,2/2/2023,Male,Asian,Hispanic or Latino,2023-06-06,drug6,lumbar,thoracic,2023-01-27
+866305,1981,,Male,Other Race,Unknown,2023-04-03,drug5,lumbar,thoracic,2023-04-28
+577127,1935,,Male,Other Race,Unknown,2023-03-03,drug6,lumbar,lumbar,2022-10-03
+676868,2008,,Female,Asian,Hispanic or Latino,2022-09-22,drug6,lumbar,lumbar,2022-10-12
+322009,1957,,Female,Multirace,Unknown,2023-03-22,drug4,thoracic,lumbar,2023-02-25
+940873,1980,5/17/2023,Male,Asian,Unknown,2023-06-26,drug3,lumbar,lumbar,2023-03-14
+922845,1934,,Male,Asian,Hispanic or Latino,2023-06-25,drug6,thoracic,thoracic,2023-04-16
+530088,1972,,Female,Other Race,Hispanic or Latino,2023-07-08,drug6,thoracic,thoracic,2022-09-09
+525477,1995,2/10/2023,Female,Other Race,Not Hispanic or Latino,2023-04-15,drug1,thoracic,lumbar,2023-03-09
+560831,1973,4/5/2023,Female,White,Not Hispanic or Latino,2023-05-30,drug3,lumbar,lumbar,2023-01-09
+971281,2009,,Female,Asian,Not Hispanic or Latino,2023-06-05,drug4,lumbar,lumbar,2023-06-17
+930231,1960,,Male,Multirace,Hispanic or Latino,2023-02-05,drug4,lumbar,thoracic,2023-02-03
+596767,2003,,Male,Other Race,Unknown,2022-07-24,drug2,thoracic,thoracic,2023-04-18
+349687,1974,5/14/2023,Female,White,Unknown,2022-10-24,drug6,thoracic,thoracic,2022-08-14
+749595,1967,,Male,Other Race,Unknown,2022-08-28,drug5,thoracic,lumbar,2023-05-31
+825541,1999,,Male,Multirace,Unknown,2022-07-13,drug3,lumbar,thoracic,2022-10-11
+124923,1944,,Female,White,Hispanic or Latino,2023-02-25,drug5,thoracic,lumbar,2023-03-07
+531492,2014,1/11/2023,Male,Other Race,Not Hispanic or Latino,2022-08-11,drug4,thoracic,lumbar,2022-07-26
+658547,1945,11/28/2022,Female,Multirace,Unknown,2022-09-12,drug5,thoracic,thoracic,2022-12-16
+92484,1975,4/12/2023,Female,Asian,Not Hispanic or Latino,2023-01-25,drug6,thoracic,lumbar,2023-05-15
+127127,1978,10/12/2022,Male,White,Hispanic or Latino,2023-07-09,drug5,lumbar,lumbar,2023-04-22
+167559,1993,,Female,White,Hispanic or Latino,2022-09-10,drug4,thoracic,thoracic,2022-11-30
+195945,2013,12/20/2022,Female,White,Unknown,2023-06-11,drug6,thoracic,lumbar,2023-01-31
+446680,2004,3/19/2023,Female,Multirace,Not Hispanic or Latino,2022-07-12,drug5,thoracic,thoracic,2023-01-21
+250841,2007,12/29/2022,Male,Multirace,Hispanic or Latino,2022-10-24,drug5,lumbar,lumbar,2023-01-03
+305466,1972,,Male,White,Unknown,2022-10-01,drug2,thoracic,lumbar,2023-03-28
+656911,1993,,Male,White,Unknown,2022-08-10,drug2,lumbar,thoracic,2022-09-24
+992498,2004,,Female,White,Hispanic or Latino,2023-04-19,drug1,thoracic,lumbar,2022-09-26
+752153,1998,,Male,Asian,Unknown,2022-11-27,drug4,thoracic,lumbar,2022-07-31
+977669,1935,,Male,White,Hispanic or Latino,2023-06-29,drug2,lumbar,lumbar,2022-08-17
+944040,1966,,Male,Other Race,Hispanic or Latino,2023-04-02,drug2,thoracic,lumbar,2023-04-12
+120672,1998,,Male,Asian,Not Hispanic or Latino,2022-10-31,drug2,thoracic,thoracic,2023-01-20
+681613,1999,,Female,Other Race,Hispanic or Latino,2023-03-22,drug1,thoracic,thoracic,2023-07-08
+1141,1973,7/14/2022,Male,Asian,Hispanic or Latino,2022-12-02,drug6,lumbar,thoracic,2022-11-28
+275314,1966,9/6/2022,Male,White,Hispanic or Latino,2023-04-25,drug1,lumbar,lumbar,2023-06-25
+940600,1986,,Female,Other Race,Unknown,2023-01-09,drug4,thoracic,thoracic,2023-01-11
+141126,2016,,Male,Other Race,Not Hispanic or Latino,2023-03-08,drug5,lumbar,thoracic,2023-04-29
+140319,1971,,Female,Multirace,Hispanic or Latino,2022-11-20,drug1,lumbar,thoracic,2022-12-10
+436354,1972,,Male,Asian,Unknown,2022-12-11,drug3,lumbar,lumbar,2022-08-26
+715266,1949,,Female,Other Race,Hispanic or Latino,2022-11-26,drug3,thoracic,lumbar,2022-07-14
+918046,2009,,Male,White,Unknown,2022-10-06,drug6,lumbar,lumbar,2023-03-03
+311445,1996,,Female,Asian,Hispanic or Latino,2022-11-27,drug5,thoracic,lumbar,2022-08-12
+127002,1959,,Female,Multirace,Hispanic or Latino,2022-09-10,drug1,thoracic,lumbar,2023-01-12
+768347,1957,,Female,White,Not Hispanic or Latino,2023-01-07,drug5,lumbar,thoracic,2023-01-21
+568677,2014,,Male,Other Race,Hispanic or Latino,2022-07-18,drug5,lumbar,lumbar,2022-11-19
+520769,1967,,Male,Multirace,Hispanic or Latino,2022-11-11,drug4,lumbar,thoracic,2023-01-03
+767434,1973,8/29/2022,Female,Other Race,Unknown,2022-10-25,drug1,lumbar,lumbar,2023-06-25
+145695,1966,3/13/2023,Female,Other Race,Hispanic or Latino,2022-07-17,drug4,thoracic,lumbar,2022-12-24
+490192,1976,4/13/2023,Male,Other Race,Hispanic or Latino,2022-09-07,drug6,lumbar,lumbar,2023-01-21
+50429,2009,6/29/2023,Female,Multirace,Unknown,2022-08-21,drug3,lumbar,lumbar,2023-03-10
+82621,1989,,Male,Other Race,Hispanic or Latino,2022-10-12,drug2,lumbar,lumbar,2023-06-16
+925116,1936,,Male,White,Unknown,2023-02-05,drug2,thoracic,thoracic,2023-07-02
+694205,1984,,Male,Multirace,Unknown,2023-07-06,drug3,thoracic,lumbar,2023-02-11
+388126,1990,,Male,White,Not Hispanic or Latino,2022-08-13,drug6,lumbar,thoracic,2023-07-07
+438944,1959,1/20/2023,Male,White,Not Hispanic or Latino,2022-12-22,drug4,lumbar,lumbar,2022-11-09
+939425,1983,,Female,White,Hispanic or Latino,2023-03-31,drug4,lumbar,thoracic,2023-02-13
+211793,1941,12/2/2022,Male,Other Race,Not Hispanic or Latino,2022-11-09,drug5,lumbar,thoracic,2023-05-24
+596262,1960,,Male,Multirace,Hispanic or Latino,2022-08-24,drug6,thoracic,thoracic,2023-03-24
+626969,2007,,Female,White,Hispanic or Latino,2023-04-03,drug5,lumbar,thoracic,2022-07-15
+811620,2017,8/8/2022,Female,Multirace,Not Hispanic or Latino,2022-09-04,drug2,lumbar,thoracic,2023-01-11
+863944,1961,5/27/2023,Male,Other Race,Hispanic or Latino,2022-09-15,drug1,thoracic,lumbar,2022-07-24
+16867,2009,,Female,Multirace,Hispanic or Latino,2023-03-01,drug3,lumbar,thoracic,2022-08-15
+141724,1962,,Male,Other Race,Not Hispanic or Latino,2023-03-19,drug4,lumbar,thoracic,2023-04-24
+718360,1994,,Female,Asian,Not Hispanic or Latino,2023-01-13,drug1,thoracic,thoracic,2022-10-06
+400754,2002,6/15/2023,Female,White,Hispanic or Latino,2023-01-29,drug3,lumbar,lumbar,2022-08-29
+554660,1961,,Female,White,Unknown,2023-01-14,drug2,lumbar,lumbar,2022-11-16
+185287,1934,2/10/2023,Male,Other Race,Hispanic or Latino,2023-01-11,drug6,thoracic,lumbar,2023-01-25
+658846,1981,1/15/2023,Female,Other Race,Not Hispanic or Latino,2022-08-12,drug6,lumbar,thoracic,2022-12-06
+205585,2004,,Female,White,Not Hispanic or Latino,2022-09-17,drug5,thoracic,thoracic,2023-04-19
+816553,1968,4/6/2023,Female,Multirace,Unknown,2023-07-05,drug5,lumbar,thoracic,2022-11-26
+383199,2016,,Female,Other Race,Hispanic or Latino,2022-10-29,drug6,lumbar,thoracic,2023-03-26
+928686,1998,4/1/2023,Female,Asian,Not Hispanic or Latino,2022-11-10,drug6,lumbar,lumbar,2023-06-01
+725122,1967,8/24/2022,Female,Multirace,Not Hispanic or Latino,2022-11-06,drug3,lumbar,thoracic,2022-12-17
+163258,1989,,Female,Other Race,Not Hispanic or Latino,2023-06-27,drug5,lumbar,thoracic,2022-08-02
+952167,1988,2/17/2023,Male,Multirace,Unknown,2022-08-28,drug2,lumbar,thoracic,2023-06-08
+92377,2016,11/28/2022,Female,Multirace,Not Hispanic or Latino,2022-11-17,drug1,thoracic,thoracic,2022-09-07
+645164,1971,,Female,Other Race,Not Hispanic or Latino,2023-06-18,drug5,thoracic,thoracic,2023-01-28
+184166,1942,5/8/2023,Female,Other Race,Not Hispanic or Latino,2022-09-29,drug4,lumbar,lumbar,2022-12-16
+690518,2013,5/4/2023,Male,Asian,Unknown,2023-06-09,drug3,thoracic,lumbar,2022-12-29
+380035,1993,,Male,Asian,Unknown,2022-07-14,drug5,thoracic,lumbar,2022-11-23
+26890,1984,,Female,White,Hispanic or Latino,2022-10-17,drug2,lumbar,lumbar,2023-05-30
+159795,2011,,Male,Asian,Unknown,2023-04-12,drug3,thoracic,lumbar,2023-03-31
+387128,2005,6/28/2023,Male,White,Unknown,2022-12-24,drug2,thoracic,thoracic,2022-11-27
+729285,1991,,Male,Asian,Hispanic or Latino,2022-08-26,drug4,thoracic,lumbar,2023-03-16
+717337,1960,11/10/2022,Male,Other Race,Unknown,2023-03-26,drug6,thoracic,thoracic,2023-03-01
+337192,1935,,Female,Asian,Not Hispanic or Latino,2023-07-05,drug4,lumbar,lumbar,2022-11-03
+260645,1943,,Female,Multirace,Unknown,2023-01-23,drug3,lumbar,lumbar,2023-07-04
+368374,1957,,Male,Asian,Not Hispanic or Latino,2023-03-29,drug5,lumbar,thoracic,2023-07-03
+162026,1972,,Female,Other Race,Hispanic or Latino,2023-04-17,drug5,thoracic,thoracic,2022-09-13
+285910,1966,,Female,Other Race,Unknown,2022-12-09,drug2,lumbar,thoracic,2023-03-06
+861025,1975,12/7/2022,Male,White,Not Hispanic or Latino,2023-06-30,drug3,lumbar,lumbar,2023-07-02
+983031,1952,12/27/2022,Male,Asian,Hispanic or Latino,2023-01-23,drug3,thoracic,thoracic,2023-03-21
+752298,1990,10/14/2022,Female,Multirace,Hispanic or Latino,2023-02-05,drug6,lumbar,lumbar,2023-05-04
+754365,1991,,Female,White,Hispanic or Latino,2023-01-05,drug4,thoracic,lumbar,2022-11-28
+640790,1943,12/27/2022,Male,Other Race,Not Hispanic or Latino,2022-08-11,drug1,lumbar,lumbar,2023-02-26
+524685,2011,,Female,White,Unknown,2023-02-06,drug1,thoracic,thoracic,2023-04-04
+624489,1948,3/8/2023,Female,Multirace,Not Hispanic or Latino,2023-05-21,drug4,lumbar,lumbar,2022-09-25
+403648,2003,8/9/2022,Male,Asian,Not Hispanic or Latino,2022-11-16,drug5,thoracic,lumbar,2023-01-19
+155608,1951,,Male,Other Race,Unknown,2022-08-29,drug3,thoracic,thoracic,2022-08-26
+549382,1972,11/8/2022,Female,White,Hispanic or Latino,2022-08-12,drug2,lumbar,thoracic,2023-06-06
+460101,1942,,Male,White,Not Hispanic or Latino,2023-03-03,drug3,lumbar,lumbar,2023-06-19
+48403,1939,,Male,Multirace,Hispanic or Latino,2023-01-10,drug5,thoracic,lumbar,2023-05-07
+702703,2008,,Male,Asian,Unknown,2022-12-21,drug1,thoracic,thoracic,2023-03-30
+985019,1961,5/16/2023,Male,Other Race,Not Hispanic or Latino,2022-10-05,drug1,lumbar,thoracic,2023-07-11
+259913,1999,4/5/2023,Female,White,Unknown,2023-05-13,drug2,thoracic,thoracic,2023-01-20
+7057,1948,1/11/2023,Female,Multirace,Hispanic or Latino,2023-05-15,drug5,thoracic,lumbar,2022-09-05
+579990,1976,10/8/2022,Female,Multirace,Hispanic or Latino,2022-12-15,drug1,thoracic,thoracic,2023-03-22
+596884,2017,1/13/2023,Female,Other Race,Hispanic or Latino,2023-06-07,drug3,thoracic,thoracic,2022-08-10
+838616,1987,3/3/2023,Male,Asian,Not Hispanic or Latino,2022-11-19,drug1,thoracic,thoracic,2023-02-15
+422539,1965,,Male,Multirace,Unknown,2022-08-14,drug6,lumbar,lumbar,2022-10-22
+279031,1990,,Male,Other Race,Not Hispanic or Latino,2022-09-05,drug3,lumbar,lumbar,2022-08-06
+71289,1998,,Male,Multirace,Unknown,2022-09-19,drug6,thoracic,thoracic,2022-12-10
+199925,2002,8/16/2022,Male,Other Race,Hispanic or Latino,2023-05-13,drug6,thoracic,thoracic,2023-03-18
+187332,1938,,Female,White,Hispanic or Latino,2023-01-05,drug3,thoracic,thoracic,2022-09-02
+315780,1938,6/9/2023,Female,Asian,Not Hispanic or Latino,2022-09-28,drug4,lumbar,thoracic,2022-08-30
+889720,1995,5/9/2023,Female,Other Race,Hispanic or Latino,2023-03-03,drug6,lumbar,thoracic,2022-09-29
+39635,1963,,Female,Multirace,Unknown,2023-02-11,drug4,thoracic,lumbar,2022-12-17
+360613,1968,,Male,White,Hispanic or Latino,2022-07-23,drug4,thoracic,thoracic,2023-02-09
+410337,1972,2/28/2023,Male,White,Not Hispanic or Latino,2023-06-15,drug3,lumbar,lumbar,2023-02-15
+214810,2013,,Female,Asian,Not Hispanic or Latino,2022-10-03,drug4,lumbar,thoracic,2022-10-21
+37090,2010,,Female,White,Hispanic or Latino,2023-01-20,drug6,thoracic,lumbar,2022-12-19
+492487,1940,,Male,Asian,Unknown,2023-05-10,drug6,thoracic,thoracic,2022-08-14
+112704,1999,1/13/2023,Male,White,Unknown,2022-07-25,drug2,thoracic,lumbar,2023-04-28
+812486,1950,,Female,Multirace,Unknown,2023-06-14,drug3,thoracic,thoracic,2023-03-22
+184131,1939,,Male,Asian,Unknown,2022-11-16,drug5,lumbar,lumbar,2023-03-08
+260681,1972,,Male,Asian,Hispanic or Latino,2022-12-15,drug1,thoracic,lumbar,2023-01-01
+652375,1946,,Male,White,Hispanic or Latino,2023-01-24,drug4,thoracic,lumbar,2022-11-09
+834301,1959,,Female,White,Hispanic or Latino,2022-10-13,drug1,thoracic,thoracic,2023-05-06
+690055,1963,,Female,White,Unknown,2022-07-16,drug5,thoracic,thoracic,2022-08-22
+528812,1992,,Male,Multirace,Not Hispanic or Latino,2022-10-11,drug1,lumbar,thoracic,2023-01-03
+830408,1961,,Female,Asian,Hispanic or Latino,2022-12-13,drug1,thoracic,thoracic,2023-05-17
+108994,1951,,Female,Other Race,Not Hispanic or Latino,2023-04-25,drug1,lumbar,lumbar,2023-02-01
+373651,1990,,Male,Asian,Not Hispanic or Latino,2022-09-11,drug3,lumbar,thoracic,2023-04-11
+238914,2015,6/13/2023,Male,Multirace,Hispanic or Latino,2023-01-19,drug3,lumbar,thoracic,2022-11-20
+548292,2007,,Male,Asian,Not Hispanic or Latino,2022-11-19,drug2,thoracic,lumbar,2022-08-15
+600727,1943,8/30/2022,Male,Other Race,Hispanic or Latino,2023-03-01,drug3,lumbar,thoracic,2022-08-15
+848103,1990,,Female,Asian,Hispanic or Latino,2022-11-18,drug5,lumbar,lumbar,2022-12-01
+518233,2009,,Female,Other Race,Unknown,2023-05-29,drug4,lumbar,lumbar,2022-11-29
+345063,1951,2/27/2023,Female,Asian,Unknown,2023-05-10,drug3,lumbar,lumbar,2023-06-21
+970843,1991,3/22/2023,Female,Other Race,Not Hispanic or Latino,2023-06-25,drug6,lumbar,lumbar,2023-06-22
+339643,1950,,Male,Asian,Hispanic or Latino,2023-02-10,drug6,thoracic,thoracic,2023-06-08
+7237,1991,,Female,Multirace,Unknown,2023-04-06,drug1,thoracic,lumbar,2023-06-06
+898162,1956,,Female,Other Race,Not Hispanic or Latino,2022-12-21,drug4,lumbar,thoracic,2023-02-28
+499776,1939,,Male,Multirace,Not Hispanic or Latino,2022-11-28,drug5,lumbar,thoracic,2022-12-28
+852480,1985,,Female,White,Not Hispanic or Latino,2022-09-14,drug6,lumbar,lumbar,2022-10-06
+687946,1967,9/28/2022,Female,Other Race,Unknown,2022-12-01,drug6,lumbar,thoracic,2022-11-18
+966742,1985,11/3/2022,Male,Multirace,Hispanic or Latino,2023-01-13,drug4,thoracic,lumbar,2023-02-16
+807902,2016,,Male,Other Race,Hispanic or Latino,2022-07-24,drug4,lumbar,thoracic,2022-12-29
+37047,2001,,Female,Asian,Hispanic or Latino,2023-04-04,drug5,lumbar,thoracic,2022-08-29
+617469,2011,,Male,White,Not Hispanic or Latino,2022-08-07,drug6,lumbar,lumbar,2022-10-15
+206141,1943,,Male,Asian,Hispanic or Latino,2023-05-16,drug4,thoracic,thoracic,2022-11-15
+454981,2000,5/14/2023,Female,Asian,Unknown,2023-06-04,drug4,lumbar,lumbar,2023-05-03
+793505,2010,3/26/2023,Male,Other Race,Unknown,2022-12-07,drug4,lumbar,lumbar,2022-10-21
+807795,1953,,Female,Asian,Hispanic or Latino,2023-06-18,drug6,thoracic,lumbar,2022-09-04
+510646,2015,5/1/2023,Male,Asian,Unknown,2022-12-16,drug3,lumbar,thoracic,2022-07-12
+230820,1963,6/11/2023,Female,Asian,Hispanic or Latino,2022-09-16,drug1,thoracic,lumbar,2023-04-15
+468747,2001,,Male,Multirace,Not Hispanic or Latino,2022-09-10,drug3,lumbar,thoracic,2022-09-22
+785937,2015,,Female,Other Race,Not Hispanic or Latino,2022-12-20,drug1,thoracic,lumbar,2023-05-13
+345072,1999,,Male,Multirace,Hispanic or Latino,2022-10-15,drug1,lumbar,lumbar,2022-07-12
+528798,1954,2/10/2023,Female,Other Race,Unknown,2022-09-09,drug5,thoracic,lumbar,2023-07-10
+124626,1949,,Male,Multirace,Hispanic or Latino,2022-11-07,drug5,lumbar,lumbar,2022-08-13
+61084,1971,8/21/2022,Female,White,Unknown,2023-01-06,drug5,lumbar,lumbar,2022-11-16
+346777,1965,,Female,Other Race,Not Hispanic or Latino,2023-03-28,drug1,thoracic,thoracic,2023-04-06
+248946,1949,,Male,Multirace,Hispanic or Latino,2022-09-27,drug2,thoracic,thoracic,2022-11-16
+771109,1996,,Male,White,Not Hispanic or Latino,2022-09-25,drug4,lumbar,lumbar,2023-02-11
+117797,1994,,Female,Asian,Not Hispanic or Latino,2023-04-16,drug1,lumbar,thoracic,2023-02-22
+953344,1962,,Male,Asian,Not Hispanic or Latino,2023-04-17,drug4,thoracic,thoracic,2022-10-18
+761457,1956,4/28/2023,Female,Other Race,Unknown,2022-09-11,drug4,thoracic,thoracic,2022-09-17
+960188,1957,,Female,Other Race,Unknown,2022-11-13,drug4,lumbar,lumbar,2023-06-29
+692484,1940,,Female,White,Hispanic or Latino,2023-07-10,drug4,lumbar,lumbar,2022-11-12
+349707,1938,,Female,Asian,Not Hispanic or Latino,2023-06-26,drug3,lumbar,thoracic,2023-07-03
+854217,1962,,Male,Multirace,Hispanic or Latino,2023-02-02,drug6,lumbar,thoracic,2023-06-14
+203927,1935,,Male,Asian,Not Hispanic or Latino,2022-07-18,drug5,lumbar,lumbar,2022-09-20
+925695,1951,,Male,Other Race,Hispanic or Latino,2023-04-01,drug5,lumbar,lumbar,2023-03-11
+853703,1964,,Male,Asian,Unknown,2023-03-01,drug2,lumbar,lumbar,2023-06-16
+534816,1988,,Male,Asian,Unknown,2023-01-07,drug1,lumbar,lumbar,2022-07-15
+691764,2015,7/25/2022,Male,White,Not Hispanic or Latino,2023-05-21,drug1,thoracic,thoracic,2023-03-15
+601832,2000,1/31/2023,Female,White,Unknown,2022-08-04,drug3,lumbar,lumbar,2023-02-11
+404119,1993,,Male,Other Race,Unknown,2022-11-01,drug1,thoracic,lumbar,2023-04-06
+409817,1952,3/27/2023,Male,Other Race,Hispanic or Latino,2023-01-03,drug3,thoracic,lumbar,2022-10-14
+445874,1967,,Male,Asian,Unknown,2023-02-18,drug2,lumbar,lumbar,2022-08-30
+667301,1961,12/18/2022,Female,Asian,Not Hispanic or Latino,2022-10-01,drug2,lumbar,lumbar,2023-04-28
+639362,1935,4/4/2023,Male,Asian,Hispanic or Latino,2023-04-06,drug4,thoracic,thoracic,2022-08-19
+425778,1997,,Male,White,Hispanic or Latino,2022-10-22,drug5,thoracic,thoracic,2022-11-04
+73580,1962,,Female,Multirace,Hispanic or Latino,2023-05-04,drug2,lumbar,thoracic,2022-12-10
+12540,1963,11/18/2022,Male,Other Race,Hispanic or Latino,2022-10-15,drug2,thoracic,thoracic,2022-07-13
+87941,1942,,Male,Multirace,Unknown,2022-09-02,drug3,thoracic,lumbar,2023-05-09
+453529,2013,12/23/2022,Female,Other Race,Not Hispanic or Latino,2022-10-14,drug4,lumbar,thoracic,2022-12-09
+599803,1980,6/1/2023,Female,Asian,Unknown,2022-09-03,drug1,lumbar,thoracic,2022-07-22
+975072,2001,,Female,Multirace,Hispanic or Latino,2022-10-23,drug6,lumbar,thoracic,2023-02-01
+978986,1965,6/30/2023,Male,Asian,Hispanic or Latino,2023-05-03,drug2,lumbar,thoracic,2023-04-24
+791222,2011,12/13/2022,Female,Other Race,Unknown,2022-09-23,drug6,lumbar,thoracic,2022-10-30
+928051,2007,,Female,Other Race,Not Hispanic or Latino,2022-09-22,drug6,lumbar,lumbar,2023-05-24
+111999,2011,5/19/2023,Female,Multirace,Hispanic or Latino,2023-01-31,drug5,thoracic,thoracic,2023-03-17
+389781,2016,11/30/2022,Female,Asian,Not Hispanic or Latino,2022-11-15,drug3,lumbar,lumbar,2022-09-26
+81882,1987,2/23/2023,Female,Other Race,Not Hispanic or Latino,2023-02-08,drug2,lumbar,lumbar,2023-05-03
+875422,1934,3/25/2023,Male,Multirace,Not Hispanic or Latino,2022-08-08,drug2,lumbar,thoracic,2023-03-14
+77631,1963,,Female,Multirace,Hispanic or Latino,2023-02-19,drug6,thoracic,lumbar,2023-06-03
+84398,1968,,Female,White,Not Hispanic or Latino,2023-05-22,drug1,lumbar,lumbar,2023-04-27
+710500,2000,,Male,White,Not Hispanic or Latino,2023-03-12,drug6,lumbar,thoracic,2023-04-06
+756304,2012,5/30/2023,Male,White,Hispanic or Latino,2023-05-20,drug6,lumbar,lumbar,2022-09-25
+5774,2002,6/19/2023,Male,Multirace,Hispanic or Latino,2023-01-31,drug3,lumbar,lumbar,2023-04-03
+72200,1954,7/3/2023,Female,White,Hispanic or Latino,2022-08-24,drug2,lumbar,thoracic,2023-04-19
+386254,1974,,Female,Asian,Hispanic or Latino,2022-08-16,drug5,lumbar,lumbar,2022-09-25
+181656,1962,7/24/2022,Male,Other Race,Hispanic or Latino,2023-01-30,drug2,lumbar,thoracic,2023-06-16
+26848,1949,,Female,Asian,Not Hispanic or Latino,2022-08-11,drug6,lumbar,lumbar,2022-12-04
+671669,1987,,Male,Asian,Hispanic or Latino,2023-05-15,drug1,thoracic,lumbar,2023-05-14
+856792,2011,,Female,Multirace,Unknown,2023-03-19,drug5,thoracic,lumbar,2022-10-11
+69502,1939,,Male,White,Hispanic or Latino,2022-11-19,drug1,thoracic,lumbar,2023-05-28
+443144,1938,,Female,Asian,Not Hispanic or Latino,2023-05-07,drug2,lumbar,lumbar,2023-02-21
+140851,1937,,Female,Multirace,Not Hispanic or Latino,2023-03-02,drug3,lumbar,thoracic,2023-01-22
+44323,1974,7/15/2022,Female,Other Race,Not Hispanic or Latino,2023-04-01,drug2,lumbar,thoracic,2022-11-02
+432564,1984,,Female,White,Unknown,2023-02-06,drug1,thoracic,lumbar,2023-04-16
+597222,1952,1/10/2023,Male,White,Unknown,2023-03-12,drug6,thoracic,lumbar,2022-07-18
+137795,2017,,Female,White,Not Hispanic or Latino,2023-04-28,drug3,lumbar,lumbar,2022-12-10
+142337,1969,5/9/2023,Female,Other Race,Not Hispanic or Latino,2022-10-14,drug4,thoracic,thoracic,2023-03-10
+933216,1996,,Male,White,Hispanic or Latino,2023-04-23,drug1,thoracic,thoracic,2023-01-05
+455672,1945,,Male,Asian,Unknown,2022-11-08,drug3,thoracic,thoracic,2022-10-06
+906334,1986,,Male,Asian,Unknown,2023-03-08,drug3,lumbar,thoracic,2022-12-30
+147375,1968,3/17/2023,Female,Other Race,Not Hispanic or Latino,2022-10-07,drug6,thoracic,thoracic,2022-08-20
+708243,1992,7/4/2023,Male,White,Unknown,2023-05-09,drug1,thoracic,lumbar,2022-10-03
+316494,1971,,Female,Other Race,Unknown,2022-12-09,drug2,thoracic,lumbar,2022-07-20
+545742,1952,,Male,Asian,Not Hispanic or Latino,2023-02-16,drug4,lumbar,thoracic,2023-02-09
+93006,1982,,Male,Multirace,Hispanic or Latino,2023-06-06,drug1,thoracic,lumbar,2023-01-04
+234628,1973,8/8/2022,Female,Multirace,Unknown,2023-07-03,drug1,thoracic,thoracic,2023-01-30
+874622,1941,,Female,Other Race,Unknown,2022-11-29,drug4,thoracic,thoracic,2022-10-27
+152393,1940,,Female,Other Race,Not Hispanic or Latino,2022-12-03,drug3,lumbar,thoracic,2023-04-01
+837248,1952,9/27/2022,Female,Asian,Not Hispanic or Latino,2023-02-11,drug2,lumbar,thoracic,2023-06-03
+572893,2014,11/11/2022,Male,Asian,Hispanic or Latino,2022-11-12,drug6,thoracic,thoracic,2023-01-13
+582658,2009,,Male,Multirace,Hispanic or Latino,2022-10-29,drug5,lumbar,lumbar,2023-05-19
+364218,1954,7/7/2023,Male,Other Race,Not Hispanic or Latino,2022-11-14,drug2,thoracic,thoracic,2023-02-05
+120508,1973,10/18/2022,Male,White,Hispanic or Latino,2022-10-28,drug5,thoracic,lumbar,2023-07-06
+449990,1999,2/22/2023,Female,Other Race,Not Hispanic or Latino,2023-01-23,drug1,thoracic,lumbar,2022-12-08
+97225,1957,,Male,Other Race,Hispanic or Latino,2022-10-30,drug6,lumbar,thoracic,2022-08-16
+795259,1934,11/14/2022,Male,Asian,Hispanic or Latino,2023-03-12,drug4,thoracic,lumbar,2022-12-27
+731483,1954,,Male,Other Race,Hispanic or Latino,2022-09-13,drug6,lumbar,thoracic,2022-11-13
+785015,1934,,Female,Asian,Not Hispanic or Latino,2022-10-03,drug6,lumbar,thoracic,2023-04-12
+734139,2001,10/8/2022,Female,Multirace,Not Hispanic or Latino,2023-01-22,drug6,thoracic,thoracic,2023-07-05
+918944,1957,1/1/2023,Male,Other Race,Unknown,2022-12-02,drug6,lumbar,thoracic,2022-07-13
+10021,1941,,Female,White,Not Hispanic or Latino,2022-10-10,drug4,lumbar,thoracic,2023-01-05
+406250,1961,,Male,Multirace,Hispanic or Latino,2022-08-21,drug2,lumbar,lumbar,2023-05-08
+397171,1940,,Male,Multirace,Unknown,2022-10-19,drug1,lumbar,lumbar,2022-11-04
+265061,1940,,Female,Asian,Unknown,2023-03-22,drug1,thoracic,lumbar,2022-11-08
+946025,2008,,Male,White,Not Hispanic or Latino,2022-12-01,drug4,lumbar,lumbar,2022-12-05
+144903,1958,,Male,Multirace,Hispanic or Latino,2022-12-04,drug2,thoracic,lumbar,2022-09-29
+958395,1985,,Female,Multirace,Unknown,2023-03-03,drug2,thoracic,lumbar,2023-02-10
+332587,2014,,Male,White,Hispanic or Latino,2023-02-07,drug1,thoracic,thoracic,2023-05-09
+495475,1972,,Female,Multirace,Hispanic or Latino,2023-01-31,drug1,lumbar,lumbar,2023-06-08
+14103,1994,,Male,Other Race,Unknown,2022-08-27,drug4,thoracic,thoracic,2023-04-21
+95808,1956,3/14/2023,Female,Other Race,Hispanic or Latino,2023-02-06,drug3,lumbar,lumbar,2022-07-30
+448073,1952,,Male,White,Not Hispanic or Latino,2022-10-03,drug2,lumbar,lumbar,2022-12-14
+367332,1998,,Female,Multirace,Not Hispanic or Latino,2023-07-11,drug6,thoracic,lumbar,2023-03-25
+35555,2009,,Female,Other Race,Unknown,2022-08-22,drug2,thoracic,lumbar,2023-03-10
+506131,1995,,Female,Asian,Not Hispanic or Latino,2023-03-28,drug5,lumbar,thoracic,2023-05-04
+590617,1943,,Female,Multirace,Unknown,2022-08-06,drug2,thoracic,thoracic,2023-06-04
+671850,1988,,Male,Asian,Hispanic or Latino,2022-08-08,drug3,thoracic,thoracic,2023-05-26
+51207,1964,,Male,Multirace,Unknown,2022-11-04,drug1,thoracic,thoracic,2022-07-24
+25857,2003,,Female,Asian,Not Hispanic or Latino,2022-11-21,drug4,lumbar,thoracic,2023-02-25
+780980,1948,4/16/2023,Female,Asian,Unknown,2023-02-19,drug4,thoracic,lumbar,2022-12-07
+955853,2012,,Female,White,Unknown,2022-10-28,drug4,thoracic,lumbar,2022-10-21
+792299,1963,4/26/2023,Female,Multirace,Hispanic or Latino,2022-07-27,drug3,lumbar,lumbar,2022-12-15
+937559,1975,1/24/2023,Male,Other Race,Not Hispanic or Latino,2022-10-20,drug5,thoracic,thoracic,2023-06-03
+743875,1955,6/13/2023,Female,Other Race,Unknown,2022-11-26,drug1,thoracic,thoracic,2023-05-01
+685676,1972,,Male,Asian,Not Hispanic or Latino,2022-08-21,drug4,lumbar,thoracic,2023-01-28
+325083,1961,3/10/2023,Male,Multirace,Not Hispanic or Latino,2022-08-07,drug3,lumbar,lumbar,2022-09-05

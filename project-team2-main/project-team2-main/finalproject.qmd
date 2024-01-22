@@ -1,0 +1,802 @@
+---
+title: "Final Project"
+format: html
+---
+# Loading Libraries
+```{r}
+library(tidyverse)
+library(lubridate)
+library(janitor)
+library(dplyr)
+library(ggplot2)
+
+library(infer)
+library(boot)
+library(stats)
+library(glmnet)
+library(car)
+library(nnet)
+
+# Setting Seed
+set.seed(1234)
+```
+
+# Reading Main Data + Cleaning Data
+```{r}
+# Reading Data
+data1 <- read.csv("/Users/ellielee/Desktop/socal-data/project-team2/mock_data/extraction_mock.csv")
+data2 <- read.csv("/Users/ellielee/Desktop/socal-data/project-team2/mock_data/extraction2_mock.csv")
+fractures <- read.csv("/Users/ellielee/Desktop/socal-data/project-team2/mock_data/9239mock.csv")
+
+# Cleaning Variable Names
+data1 <- data1 %>% janitor::clean_names()
+data2 <- data2 %>% janitor::clean_names()
+
+colnames(data1)[1] <- "person_id"
+colnames(data2)[1] <- "person_id"
+colnames(fractures) <- c("person_id", "year_of_birth", "death_date", "gender", "race", "ethnicity", "first_treatment_date", "type_of_immunotherapy", "fracture", "fracture2", "fracture_date")
+fractures[1,1] <- 856
+```
+***
+
+# Univariate EDA
+## Age (at time of 1st treatment)
+```{r}
+# Wrangling
+data1.2 <- data1
+data1.2$year_of_birth <- as.character(data1.2$year_of_birth)
+data1.2$age_date <- paste(data1.2$year_of_birth, "-01-01", sep = "")
+
+## Creating a new 'age' variable
+data1.2$new_age <- floor(as.numeric( difftime(as.Date(data1.2$first_treatment_date), as.Date(data1.2$age_date), units = "days")) / 365.25)
+
+## Isolated
+uni_age <- data1.2
+uni_age$min_treatment_age <- ave(uni_age$new_age, uni_age$person_id, FUN = min)
+uni_age <- uni_age[!duplicated(data1.2$person_id), c("person_id", "min_treatment_age")]
+```
+
+```{r}
+# Plotting
+## Histogram
+uni_age %>% 
+  ggplot(aes(x = min_treatment_age)) +
+  labs(title = "Age at Time of Frist Immunotherapy Treatment", x = "Age", y = "Count") +
+  theme_minimal() +
+  geom_histogram(binwidth = 10, fill = "blue4")
+
+## Boxplot
+uni_age %>% 
+  ggplot(aes(x = min_treatment_age)) + 
+  labs(title = "Boxplot of Age", x = "Age at Time of First Treatment") + 
+  geom_boxplot()
+
+## 5 number summary
+summary(uni_age$min_treatment_age)
+```
+
+## Total # of fractures
+```{r}
+# Wrangling
+uni_nfrac <- data1.2
+uni_nfrac <- uni_nfrac[!duplicated(uni_nfrac$person_id), c("person_id", "number_of_fracture")]
+```
+
+```{r}
+# Plotting
+## Histogram
+uni_nfrac %>% 
+  ggplot(aes(x = number_of_fracture)) +
+  labs(title = "Count by Number of Fractures", x = "Number of Fractures", y = "Count") + 
+  geom_histogram(binwidth = 5)
+
+## Boxplot
+uni_nfrac %>% 
+  ggplot(aes(x = number_of_fracture)) +
+  labs(title = "Boxplot of Number Fractures", x = "Number of Fractures") + 
+  geom_boxplot()
+
+## 5 Number Summary
+summary(uni_nfrac$number_of_fracture)
+```
+
+## Total # of immunotherapy treatments
+```{r}
+# Wrangling
+uni_ntrt <- data1.2
+uni_ntrt$total_ntrt <- ave(uni_ntrt$number_of_treatment, uni_ntrt$person_id, FUN = sum)
+uni_ntrt <- uni_ntrt[!duplicated(uni_ntrt$person_id), c("person_id", "total_ntrt")]
+```
+
+```{r}
+# Plotting
+## Histogram
+uni_ntrt %>% 
+  ggplot(aes(x = total_ntrt)) + 
+  labs(title = "Count by Number of Immunotherapy Treatments", x = "Number of Treatments", y = "Count") + 
+  geom_histogram(binwidth = 5)
+
+## Boxplot
+uni_ntrt %>% 
+  ggplot(aes(x = total_ntrt)) + 
+  labs(title = "Boxplot of Number of Immunotherapy Treatments", x = "Number of Treatments") + 
+  geom_boxplot()
+
+## 5 Number Summary
+summary(uni_ntrt$total_ntrt)
+```
+
+## Passed away
+```{r}
+# Wrangling
+uni_passed <- data1.2 %>% filter(death_date != "NULL")
+uni_passed <- uni_passed[!duplicated(uni_passed$person_id), c("person_id", "death_date")]
+
+passed <- nrow(uni_passed)
+```
+
+## Gender
+```{r}
+# Wrangling
+uni_gender <- data1.2
+uni_gender <- uni_gender[!duplicated(uni_gender$person_id), c("person_id", "gender")]
+
+uni_female <- uni_gender %>% filter(gender == "FEMALE")
+female <- nrow(uni_female)
+
+uni_male <- uni_gender %>% filter(gender == "MALE")
+male <- nrow(uni_male)
+```
+
+```{r}
+# Plotting
+uni_gender %>% 
+  ggplot(aes(x = gender)) +
+  labs(title = "Count by Gender", x = "Gender", y = "Count") + 
+  geom_bar()
+```
+
+## Race
+```{r}
+# Wrangling
+uni_race <- data1.2
+uni_race <- uni_race[!duplicated(uni_race$person_id), c("person_id", "race")]
+```
+
+```{r}
+# Plotting
+uni_race %>% 
+  ggplot(aes(x = race)) + 
+  labs(title = "Count by Race", x = "Race", y = "Count") + 
+  geom_bar()
+```
+
+## Ethnicity
+```{r}
+# Wrangling
+uni_eth <- data1.2
+uni_eth <- uni_eth[!duplicated(uni_eth$person_id), c("person_id", "ethnicity")]
+```
+
+```{r}
+# Plotting
+uni_eth %>% 
+  ggplot(aes(x = ethnicity)) + 
+  labs(title = "Count by Ethnicity", x = "Ethnicity", y = "Count") +
+  geom_bar()
+```
+
+## Type of Immunotherapy (at time of first treatment)
+```{r}
+# Wrangling
+## Creating type of immunotherapy drug variable
+data1.2 <- data1.2 %>% mutate(
+  treatment_drug = case_when(
+    grepl("durvalumab", data1.2$type_of_immunotherapy, fixed = TRUE) ~ "durvalumab",
+    grepl("ipilimumab", data1.2$type_of_immunotherapy, fixed = TRUE) ~ "ipilimumab",
+    grepl("atezolizumab", data1.2$type_of_immunotherapy, fixed = TRUE) ~ "atezolizumab",
+    grepl("pembrolizumab", data1.2$type_of_immunotherapy, fixed = TRUE) ~ "pembrolizumab",
+    grepl("nivolumab", data1.2$type_of_immunotherapy, fixed = TRUE) ~ "nivolumab"))
+
+## Finding the very first treatment date
+data1.2$first_total_treatment_date <- ave(data1.2$first_treatment_date, data1.2$person_id, FUN = min)
+
+## Isolated
+uni_type <- data1.2
+uni_type <- uni_type[!duplicated(uni_type$person_id), c("person_id", "first_total_treatment_date", "treatment_drug")]
+```
+
+```{r}
+# Plotting
+## Bar plot of types of drugs
+uni_type %>% 
+  ggplot(aes(x = treatment_drug)) +
+  labs(title = "Type of Immunotherapy Drug Administered at Time of First Treatment", x = "Type of Immunotherapy Drug", y = "Count") +
+  theme_minimal() + 
+  geom_bar()
+```
+
+## Treatment Duration
+```{r}
+# Wrangling
+## Finding the very last treatment date
+uni_dur <- data1.2
+uni_dur$last_total_treatment_date <- ave(uni_dur$last_treatment_date, uni_dur$person_id, FUN = max)
+uni_dur <- uni_dur[!duplicated(uni_dur$person_id), c("person_id", "last_total_treatment_date")]
+
+## Finding difference in treatments by days
+uni_dur <- merge(uni_dur, uni_type, by = "person_id", all = TRUE)
+uni_dur$treatment_duration <- as.numeric(difftime(as.Date(uni_dur$last_total_treatment_date), as.Date(uni_dur$first_total_treatment_date), units = "days")) + 1
+### add 1 to account for treatments whose first and last dates are ==
+
+## Isolated
+uni_dur <- uni_dur %>% select(person_id, first_total_treatment_date, last_total_treatment_date, treatment_duration)
+```
+
+```{r}
+# Plotting
+## Histogram
+uni_dur %>% 
+  ggplot(aes(x = treatment_duration)) +
+  labs(title = "Count by Treatment Duration (Days)", x = "Treatment Duration (Days)", y = "Count") + 
+  geom_histogram()
+
+## Boxplot
+uni_dur %>%
+  ggplot(aes(x = treatment_duration)) +
+  labs(title = "Boxplot of Treatment Duration (Days)", x = "Treatment Duration (Days)") +
+  geom_boxplot()
+
+## 5 Number Summary
+summary(uni_dur$treatment_duration)
+```
+
+# Bivariate EDA
+## Age vs. # of Fractures
+```{r}
+# Wrangling
+bi_age_nfrac <- merge(uni_age, uni_nfrac, by = "person_id", all = TRUE)
+```
+
+```{r}
+# Plotting
+## Scatterplot of Age and Number of Fractures
+bi_age_nfrac %>% 
+  ggplot(aes(x = min_treatment_age, y = number_of_fracture)) +
+  labs(title = "Age at the Time of First Treatment vs. Total Number of Fractures", x = "Age", y = "Total Number of Fractures") +
+  theme_minimal() +
+  geom_point(color = "blue4")
+```
+
+## Fracture Rates
+```{r}
+# Wrangling
+## Finding total # of fractures before and after treatment
+frac_rate <- data2
+frac_rate$nfrac_btrt <- frac_rate$num_before_treatment
+frac_rate$nfrac_atrt <- frac_rate$num_during_treatment + frac_rate$num_after_treatment
+frac_rate <- frac_rate[!duplicated(frac_rate$person_id), c("person_id", "nfrac_btrt", "nfrac_atrt")]
+
+## Finding time differences
+temp <- data1.2
+temp$time_btrt <- as.numeric(difftime(as.Date(temp$first_total_treatment_date), as.Date(temp$first_condition_date), units = "days"))
+temp$time_atrt <- as.numeric(difftime(as.Date(temp$last_condition_date), as.Date(temp$first_total_treatment_date), units = "days"))
+
+## If first fracture happened on the same day of treatment, it happened after treatment started
+condition <- temp$time_btrt == 0
+temp$time_btrt[condition] <- -1
+## If last fracture happened on the same day of treatment, it happened after treatment started
+temp$time_atrt <- temp$time_atrt + 1
+
+temp <- temp[!duplicated(temp$person_id), c("person_id", "time_btrt", "time_atrt")]
+
+## Merge
+frac_rate <- merge(frac_rate, temp, by = "person_id", all = TRUE)
+
+## Calculating rates
+### Testing out standardizing by 2 years before and after
+frac_rate$b_rate <- frac_rate$nfrac_btrt / frac_rate$time_btrt
+frac_rate$a_rate <- frac_rate$nfrac_atrt / frac_rate$time_atrt
+frac_rate$d_rate <- frac_rate$a_rate - frac_rate$b_rate
+```
+
+```{r}
+# Plotting
+## Histograms
+frac_rate %>% 
+  ggplot(aes(x = b_rate)) +
+  labs(title = "Histogram of Rate of VCF Before Treatment", x = "Rate of VCF", y = "Count") +
+  geom_histogram(binwidth = 0.005)
+
+frac_rate %>% 
+  ggplot(aes(x = a_rate)) +
+  labs(title = "Histogram of Rate of VCF After Treatment", x = "Rate of VCF", y = "Count") +
+  geom_histogram(binwidth = 0.005)
+
+## 5 number summaries
+summary(frac_rate$b_rate)
+summary(frac_rate$a_rate)
+```
+
+## # of VCF Before vs. After
+```{r}
+# Plotting
+## Histograms
+frac_rate %>% 
+  ggplot(aes(x = nfrac_btrt)) +
+  labs(title = "Number of VCF Before Treatment", x = "Number of VCF", y = "Count") + 
+  xlim(0, 36) + 
+  ylim(0, 30) +
+  geom_histogram(binwidth = 1, fill = "cornflowerblue")
+
+frac_rate %>% 
+  ggplot(aes(x = nfrac_atrt)) +
+  labs(title = "Number of VCF After Treatment", x = "Number of VCF", y = "Count") + 
+  xlim(0, 36) + 
+  ylim(0, 30) +
+  geom_histogram(binwidth = 1, fill = "firebrick2")
+
+## 5 number summaries
+summary(frac_rate$nfrac_btrt)
+summary(frac_rate$nfrac_atrt)
+
+# Variance
+var(frac_rate$nfrac_atrt)
+```
+
+## Treatment duration vs. # of fractures
+```{r}
+# Wrangling
+bi_dur_nfrac <- merge(uni_dur, uni_nfrac, by = "person_id", all = TRUE)
+
+## Isolated
+bi_dur_nfrac <- bi_dur_nfrac %>% select(person_id, treatment_duration, number_of_fracture)
+```
+
+```{r}
+# Plotting
+bi_dur_nfrac %>% 
+  ggplot(aes(x = treatment_duration, y = number_of_fracture)) +
+  labs(title = "Treatment Duration (Days) vs. Total Number of Fractures", x = "Treatment Duration (Days)", y = "Total Number of Fractures") +
+  geom_point()
+```
+
+## Before vs. After # of Fractures
+```{r}
+# Wrangling
+temp <- frac_rate %>% select(person_id, nfrac_btrt)
+temp2 <- frac_rate %>% select(person_id, nfrac_atrt)
+
+temp <- temp %>% mutate(when = "before") 
+temp2 <- temp2 %>% mutate(when = "after")
+
+temp <- temp %>% mutate(nfrac = nfrac_btrt) 
+temp2 <- temp2 %>% mutate(nfrac = nfrac_atrt)
+
+temp <- temp %>% select(person_id, nfrac, when)
+temp2 <- temp2 %>% select(person_id, nfrac, when)
+
+bi_nfrac <- merge(temp, temp2, by = c("person_id", "nfrac", "when"), all = TRUE)
+```
+
+```{r}
+# Plotting
+## Boxplot
+bi_nfrac %>% 
+  ggplot(aes(x = when, y = nfrac)) +
+  labs(title = "Total Number of VCF for Before and After Treatment", x = "When", y = "Number of VCF") + 
+  geom_boxplot()
+```
+
+# Modeling
+## Wrangling
+```{r}
+# Make a variable for each drug type
+## Durvalumab
+data1.2 <- data1.2 %>% mutate(durvalumab = case_when(treatment_drug == "durvalumab" ~ 1, treatment_drug != "durvalumab" ~ 0))
+temp <- data1.2
+temp$durvalumab <- ave(temp$durvalumab, temp$person_id, FUN = sum)
+temp <- temp[!duplicated(temp$person_id), c("person_id", "durvalumab")]
+
+## Ipilimumab
+data1.2 <- data1.2 %>% mutate(ipilimumab = case_when(treatment_drug == "ipilimumab" ~ 1, treatment_drug != "ipilimumab" ~ 0))
+temp2 <- data1.2
+temp2$ipilimumab <- ave(temp2$ipilimumab, temp2$person_id, FUN = sum)
+temp2 <- temp2[!duplicated(temp2$person_id), c("person_id", "ipilimumab")]
+temp <- merge(temp, temp2, by = "person_id", all = TRUE)
+
+## Atezolizumab
+data1.2 <- data1.2 %>% mutate(atezolizumab = case_when(treatment_drug == "atezolizumab" ~ 1, treatment_drug != "atezolizumab" ~ 0))
+temp2 <- data1.2
+temp2$atezolizumab <- ave(temp2$atezolizumab, temp2$person_id, FUN = sum)
+temp2 <- temp2[!duplicated(temp2$person_id), c("person_id", "atezolizumab")]
+temp <- merge(temp, temp2, by = "person_id", all = TRUE)
+
+## Pembrolizumab
+data1.2 <- data1.2 %>% mutate(pembrolizumab = case_when(treatment_drug == "pembrolizumab" ~ 1, treatment_drug != "pembrolizumab" ~ 0))
+temp2 <- data1.2
+temp2$pembrolizumab <- ave(temp2$pembrolizumab, temp2$person_id, FUN = sum)
+temp2 <- temp2[!duplicated(temp2$person_id), c("person_id", "pembrolizumab")]
+temp <- merge(temp, temp2, by = "person_id", all = TRUE)
+
+## Nivolumab
+data1.2 <- data1.2 %>% mutate(nivolumab = case_when(treatment_drug == "nivolumab" ~ 1, treatment_drug != "nivolumab" ~ 0))
+temp2 <- data1.2
+temp2$nivolumab <- ave(temp2$nivolumab, temp2$person_id, FUN = sum)
+temp2 <- temp2[!duplicated(temp2$person_id), c("person_id", "nivolumab")]
+temp <- merge(temp, temp2, by = "person_id", all = TRUE)
+```
+
+```{r}
+# More Wrangling
+modeling_data <- merge(uni_age, uni_gender, by = "person_id", all = TRUE)
+modeling_data <- merge(modeling_data, uni_race, by = "person_id", all = TRUE)
+modeling_data <- merge(modeling_data, uni_eth, by = "person_id", all = TRUE)
+modeling_data <- merge(modeling_data, uni_dur, by = "person_id", all = TRUE)
+modeling_data <- merge(modeling_data, uni_ntrt, by = "person_id", all = TRUE)
+modeling_data <- merge(modeling_data, temp, by = "person_id", all = TRUE)
+modeling_data <- merge(modeling_data, uni_nfrac, by = "person_id", all = TRUE)
+modeling_data <- merge(modeling_data, frac_rate, by = "person_id", all = TRUE)
+```
+
+```{r}
+# Creating new variable for first treatment
+uni_type <- uni_type %>% mutate(first_treatment = case_when(
+ treatment_drug == "pembrolizumab" ~ 1,
+ treatment_drug == "ipilimumab" ~ 2,
+ treatment_drug == "atezolizumab" ~ 3,
+ treatment_drug == "nivolumab" ~ 4,
+ treatment_drug == "durvalumab" ~ 5
+))
+
+temp <- uni_type %>% select(person_id, treatment_drug)
+
+modeling_data <- merge(modeling_data, temp, by = "person_id", all = TRUE)
+modeling_data$treatment_drug <- as.factor(modeling_data$treatment_drug)
+```
+
+```{r}
+# Creating new variable for fractures before but as categorical
+modeling_data <- modeling_data %>% mutate(nfrac_btrt2 = case_when(
+  nfrac_btrt == 0 ~ 0,
+  nfrac_btrt == 1 ~ 1,
+  nfrac_btrt >= 2 ~ 2
+))
+
+modeling_data$nfrac_btrt2 <- as.factor(modeling_data$nfrac_btrt2)
+
+modeling_data <- modeling_data %>% mutate(nfrac_btrt3 = case_when(
+  nfrac_btrt == 0 ~ 0,
+  nfrac_btrt >= 1 ~ 1
+))
+
+modeling_data$nfrac_btrt3 <- as.factor(modeling_data$nfrac_btrt3)
+
+# Creating new variable for fractures after but as categorical
+modeling_data <- modeling_data %>% mutate(nfrac_atrt2 = case_when(
+  nfrac_atrt == 0 ~ 0,
+  nfrac_atrt == 1 ~ 1,
+  nfrac_atrt >= 2 ~ 2
+))
+
+modeling_data$nfrac_atrt2 <- as.factor(modeling_data$nfrac_atrt2)
+
+modeling_data <- modeling_data %>% mutate(nfrac_atrt3 = case_when(
+  nfrac_atrt == 0 ~ 0,
+  nfrac_atrt >= 1 ~ 1
+))
+
+modeling_data$nfrac_atrt3 <- as.factor(modeling_data$nfrac_atrt3)
+
+
+# Creating a new variable for change
+modeling_data <- modeling_data %>% mutate(increase = case_when(
+  d_rate > 0 ~ 1,
+  d_rate <= 0 ~ 0
+))
+```
+
+## summ.mfit function
+```{r}
+summ.mfit = function( model ){
+  s = summary( model )
+  for ( i in 1:length(model$coef) ){
+          cat("\nLevel ", model$lev[i+1], "vs. Level ", model$lev[1], "\n" )
+          coef = s$coefficients[i, ]
+          rrr = exp( coef )
+          se = s$standard.errors[i, ]
+          zStat = coef / se
+          pVal = 2 * pnorm( abs(zStat), lower.tail = FALSE )
+          ci95.lo = exp( coef - qnorm(.975)*se )
+          ci95.hi = exp( coef + qnorm(.975)*se )
+          rslt = cbind(rrr, se, zStat, pVal, ci95.lo, ci95.hi )
+          print( round( rslt, 3 ) )
+  }
+}
+```
+
+
+### Multinomial Regression
+#### 1
+```{r}
+# demographics + number of treatment + treatment_drug
+# the models are not compiling with the mock data so I'm commenting out the code
+# multi.after1 <- multinom(data = modeling_data, nfrac_atrt2 ~ min_treatment_age + gender + race + ethnicity + total_ntrt + treatment_drug)
+# confint.after1 <- confint(multi.after1, level = 0.95)
+# summary(multi.after1)
+# summ.mfit(multi.after1)
+```
+#### 2
+```{r}
+# multi.after2 <- multinom(data = modeling_data, nfrac_atrt2 ~ min_treatment_age + gender + treatment_duration + total_ntrt + nfrac_btrt2)
+# confint.after2 <- confint(multi.after2, level = 0.95)
+# summary(multi.after2)
+```
+
+#### 3
+```{r}
+# multi.after3 <- multinom(data = modeling_data, nfrac_atrt2 ~ min_treatment_age + gender + treatment_duration + total_ntrt + treatment_drug + nfrac_btrt2)
+# confint.after3 <- confint(multi.after3, level = 0.95)
+# summary(multi.after3)
+```
+#### 4
+```{r}
+# modeling_data$nfrac_atrt2 <- factor(modeling_data$nfrac_atrt2, levels = c("0", "1", "2"))
+# multi.after4 <- multinom(data = modeling_data, nfrac_atrt2 ~ min_treatment_age + gender + treatment_duration + total_ntrt + treatment_drug + nfrac_btrt2)
+# confint.after4 <- confint(multi.after4, level = 0.95)
+# summary(multi.after4)
+```
+
+### Binomial Regression
+#### 1
+```{r}
+binomial.after1 <- glm(data = modeling_data, nfrac_atrt3 ~ min_treatment_age + gender + race + ethnicity, family = "binomial")
+#bconfint.after1 <- confint(binomial.after1, level = 0.95)
+summary(binomial.after1)
+```
+
+#### 2
+```{r}
+binomial.after2 <- glm(data = modeling_data, nfrac_atrt3 ~ min_treatment_age + gender + race + ethnicity + treatment_duration + total_ntrt + treatment_drug + increase, family = "binomial")
+#bconfint.after2 <- confint(binomial.after2, level = 0.95)
+summary(binomial.after2)
+```
+
+#### 3
+```{r}
+binomial.after3 <- glm(data = modeling_data, nfrac_atrt3 ~ min_treatment_age + gender + ethnicity + treatment_duration + total_ntrt + treatment_drug + increase, family = "binomial")
+#bconfint.after3 <- confint(binomial.after3, level = 0.95)
+summary(binomial.after3)
+```
+
+### Poisson Regression
+#### Before
+```{r}
+glm.before <- glm(data = modeling_data, nfrac_btrt ~ gender + race + ethnicity, family = "poisson")
+summary(glm.before)
+```
+
+#### After
+##### 1
+```{r}
+glm.after <- glm(data = modeling_data, nfrac_atrt ~ gender + race + ethnicity + treatment_duration + total_ntrt, family = "poisson")
+summary(glm.after)
+```
+##### 2
+```{r}
+glm.after <- glm(data = modeling_data, nfrac_atrt ~ gender + race + ethnicity + treatment_duration + total_ntrt + treatment_drug, family = "poisson")
+summary(glm.after)
+```
+##### 3
+```{r}
+# Just increase
+glm.after <- glm(data = modeling_data, nfrac_atrt ~ increase, family = "poisson")
+summary(glm.after)
+```
+For patients who had a positive increase in difference in rate of fractures before, the number of fractures after treatment increasses.
+
+## Lasso
+```{r}
+# Reduced model test
+# nfrac_atrt ~ gender + race + ipilimumab + atezolizumab + pembrolizumab + treatment_duration + total_ntrt
+#x = data.matrix(modeling_data[, -c(15, 16, 17)])
+#y <- modeling_data$nfrac_atrt
+
+#lasso2 <- cv.glmnet(x, y, alpha = 1, family = "poisson")
+#plot(lasso2)
+#summary(lasso2)
+
+#predict(lasso2, type = "coefficients")
+
+# possible removing multirace person, because there is only one person who is multirace
+```
+
+
+# New EDA
+## How many patients have no fractures before and after treatment?
+```{r}
+# Number of fractures before treatment
+modeling_data <- modeling_data %>% mutate(
+  nfrac_btrt4 = case_when(
+    nfrac_btrt2 == 0 ~ "0",
+    nfrac_btrt2 == 1 ~ "1",
+    nfrac_btrt2 == 2 ~ "\u2265 2"
+  )
+)
+
+modeling_data <- modeling_data %>% mutate(
+  nfrac_btrt5 = case_when(
+    nfrac_btrt3 == 0 ~ "0",
+    nfrac_btrt3 == 1 ~ ">= 1",
+  )
+)
+
+# Number of fractures after treatment
+modeling_data <- modeling_data %>% mutate(
+  nfrac_atrt4 = case_when(
+    nfrac_atrt2 == 0 ~ "0",
+    nfrac_atrt2 == 1 ~ "1",
+    nfrac_atrt2 == 2 ~ "\u2265 2"
+  )
+)
+
+modeling_data <- modeling_data %>% mutate(
+  nfrac_atrt5 = case_when(
+    nfrac_atrt3 == 0 ~ "0",
+    nfrac_atrt3 == 1 ~ ">= 1",
+  )
+)
+
+temp <- modeling_data %>% select(person_id, nfrac_btrt4, nfrac_btrt5, nfrac_atrt4, nfrac_atrt5)
+temp$nfrac_btrt4 <- as.factor(temp$nfrac_btrt4)
+temp$nfrac_btrt5 <- as.factor(temp$nfrac_btrt5)
+temp$nfrac_atrt4 <- as.factor(temp$nfrac_atrt4)
+temp$nfrac_atrt5 <- as.factor(temp$nfrac_atrt5)
+
+temp$nfrac_btrt4 <- factor(temp$nfrac_btrt4, levels = c("0", "1", "\u2265 2"))
+temp$nfrac_btrt5 <- factor(temp$nfrac_btrt5, levels = c("0", ">= 1"))
+temp$nfrac_atrt4 <- factor(temp$nfrac_atrt4, levels = c("0", "1", "\u2265 2"))
+temp$nfrac_atrt5 <- factor(temp$nfrac_atrt5, levels = c("0", ">= 1"))
+
+modeling_data$nfrac_btrt4 <- temp$nfrac_btrt4
+modeling_data$nfrac_btrt5 <- temp$nfrac_btrt5
+modeling_data$nfrac_atrt4 <- temp$nfrac_atrt4
+modeling_data$nfrac_atrt5 <- temp$nfrac_atrt5
+
+temp2 <- modeling_data %>% select(person_id, min_treatment_age, gender, race, ethnicity)
+
+temp <- merge(temp, temp2, by = "person_id", all = TRUE)
+```
+
+
+```{r}
+temp %>% 
+  ggplot(aes(x = nfrac_btrt4, fill = gender)) + 
+  labs(title = "Number of Fractures Before Treatment by Gender", x = "Number of Fractures", y = "Count") + 
+  ylim(0, 25) + 
+  theme_bw() + 
+  geom_bar(position = "dodge")
+
+temp %>% 
+  ggplot(aes(x = nfrac_btrt4)) + 
+  labs(title = "Number of Fractures Before Treatment", x = "Number of Fractures", y = "Count") + 
+  ylim(0, 45) + 
+  theme_bw() + 
+  geom_bar(fill = "chartreuse3")
+
+temp %>% 
+  ggplot(aes(x = nfrac_btrt5)) + 
+  labs(title = "Number of Fractures Before Treatment", x = "Number of Fractures", y = "Count") + 
+  ylim(0, 45) + 
+  theme_bw() + 
+  geom_bar(fill = "blue4")
+```
+
+```{r}
+# Number of fractures after treatment
+temp %>% 
+  ggplot(aes(x = nfrac_atrt4, fill = gender)) + 
+  labs(title = "Number of Fractures After Treatment by Gender", x = "Number of Fractures", y = "Count") + 
+  ylim(0, 25) + 
+  theme_bw() + 
+  geom_bar(position = "dodge")
+
+temp %>% 
+  ggplot(aes(x = nfrac_atrt4)) + 
+  labs(title = "Number of Fractures After Treatment", x = "Number of Fractures", y = "Count") + 
+  ylim(0, 45) + 
+  theme_bw() + 
+  geom_bar(fill = "goldenrod2")
+
+temp %>% 
+  ggplot(aes(x = nfrac_atrt5)) + 
+  labs(title = "Number of Fractures After Treatment", x = "Number of Fractures", y = "Count") + 
+  ylim(0, 45) + 
+  theme_bw() + 
+  geom_bar(fill = "brown1")
+```
+
+## Contingency for which bucket each patient started and ended in
+```{r}
+# Contingency
+# Multinomial
+zeroto0 <- nrow(modeling_data %>% filter(nfrac_btrt2 == 0) %>% filter(nfrac_atrt2 == 0))
+zeroto1 <- nrow(modeling_data %>% filter(nfrac_btrt2 == 0) %>% filter(nfrac_atrt2 == 1))
+zeroto2 <- nrow(modeling_data %>% filter(nfrac_btrt2 == 0) %>% filter(nfrac_atrt2 == 2))
+
+oneto0 <- nrow(modeling_data %>% filter(nfrac_btrt2 == 1) %>% filter(nfrac_atrt2 == 0))
+oneto1 <- nrow(modeling_data %>% filter(nfrac_btrt2 == 1) %>% filter(nfrac_atrt2 == 1))
+oneto2 <- nrow(modeling_data %>% filter(nfrac_btrt2 == 1) %>% filter(nfrac_atrt2 == 2))
+
+twoto0 <- nrow(modeling_data %>% filter(nfrac_btrt2 == 2) %>% filter(nfrac_atrt2 == 0))
+twoto1 <- nrow(modeling_data %>% filter(nfrac_btrt2 == 2) %>% filter(nfrac_atrt2 == 1))
+twoto2 <- nrow(modeling_data %>% filter(nfrac_btrt2 == 2) %>% filter(nfrac_atrt2 == 2))
+```
+
+## First type of Immunotherapy
+```{r}
+modeling_data %>% 
+  ggplot(aes(x = treatment_drug, fill = gender)) +
+  labs(title = "First Immunotherapy Treatment Drug by Gender", x = "Type of Treatment Drug", y = "Count") +
+  ylim(0, 45) +
+  theme_bw() +
+  geom_bar(position = "dodge")
+
+modeling_data %>% 
+  ggplot(aes(x = treatment_drug)) + 
+  labs(title = "First Immunotherapy Treatment Drug", x = "Type of Treatment Drug", y = "Count") +
+  ylim(0, 45) +
+  theme_bw() +
+  geom_bar(fill = "darkorange1")
+```
+
+## Age vs. Number of Fractures
+```{r}
+# Wrangling
+bi_age_nfrac <- merge(uni_age, uni_nfrac, by = "person_id", all = TRUE)
+temp <- uni_gender
+temp$gender <- as.factor(temp$gender)
+
+multi1 <- merge(bi_age_nfrac, temp, by = "person_id", all = TRUE)
+
+```
+
+```{r}
+# Plotting
+## Scatterplot of Age and Number of Fractures
+multi1 %>% 
+  ggplot(aes(x = min_treatment_age, y = number_of_fracture, color = gender)) +
+  labs(title = "Age at the Time of First Treatment vs. Total Number of Fractures by Gender", x = "Age", y = "Total Number of Fractures") +
+  theme_bw() +
+  geom_point(size = 2)
+```
+
+## Number of Fractures based on Number of treatments
+```{r}
+# Plotting
+## Histogram of Age and Number of Fractures
+modeling_data %>% 
+  ggplot(aes(x = total_ntrt, y = number_of_fracture, color = gender)) +
+  labs(title = "Total Number of Treatments vs. Total Number of Fractures by Gender", x = "Numbr of Treatments", y = "Total Number of Fractures") +
+  theme_bw() +
+  geom_point(size = 2)
+```
+
+## Which group of After treatment fractures
+```{r}
+modeling_data %>% 
+  ggplot(aes(x = treatment_duration, y = nfrac_atrt4)) +
+  labs(title = "Treatment Duration (Days) vs. Number of Fractures After Treatment", x = "Treatment Duration (Days)", y = "Number of Fractures After Treatment") +
+  theme_bw() +
+  geom_boxplot()
+```
+
+
+```{r}
+modeling_data %>% 
+  ggplot(aes(x = treatment_drug, y = nfrac_atrt)) +
+  labs(title = "Immunotherapy Treatment Type vs. Number of Fractures After Treatment", x = "Treatment Type", y = "Number of Fractures After Treatment") +
+  theme_bw() +
+  geom_boxplot()
+
+```

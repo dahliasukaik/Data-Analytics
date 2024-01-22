@@ -1,0 +1,246 @@
+---
+title: "EDA"
+format: html
+---
+
+```{r}
+# Foundational Code
+library(vistime)
+library(tidyverse)
+library(janitor)
+extraction = clean_names(read.csv(here::here("mock_data/extraction_mock.csv"), header = TRUE))
+extraction2 = clean_names(read.csv(here::here("mock_data/extraction2_mock.csv"), header = TRUE))
+extraction3 = clean_names(read.csv(here::here("mock_data/9239mock.csv"), header = TRUE))
+library(lubridate)
+library(dplyr)
+library(data.table)
+
+extraction3$fracture_time <- difftime(as.Date(extraction3$fracture_date), as.Date(extraction3$first_treatment_date))
+
+
+extraction3 <- extraction3 |>
+  mutate(fracture_time_simple = case_when(
+    fracture_time > 0 ~ "after treatment",
+    fracture_time < 0 ~ "before treatment",
+    fracture_time == 0 ~ "same"))
+
+extractiontest <- extraction |>
+  mutate(immunotherapy_general = case_when(
+  grepl("durvalumab", extraction$type_of_immunotherapy, fixed = TRUE) ~ "durvalumab",
+  grepl("ipilimumab", extraction$type_of_immunotherapy, fixed = TRUE) ~ "ipilimumab",
+  grepl("atezolizumab", extraction$type_of_immunotherapy, fixed = TRUE) ~ "atezolizumab",
+  grepl("pembrolizumab", extraction$type_of_immunotherapy, fixed = TRUE) ~ "pembrolizumab",
+  grepl("nivolumab", extraction$type_of_immunotherapy, fixed = TRUE)  ~ "nivolumab"))
+```
+
+
+## Vincent
+
+```{r}
+set.seed(2051132)
+
+df = extraction[sample(nrow(extraction), 10), ]
+df2 = extraction2[df$person_id,]
+
+timeline_data <- data.frame(event = as.character(c(df2$num_before_treatment,df2$num_during_treatment,df2$num_after_treatment)),
+                            start = as.Date(c(lubridate::ymd(df$year_of_birth, truncated = 2L), df$first_treatment_date, df$last_treatment_date)),
+                            
+                            end = as.Date(c(df$first_treatment_date, df$last_treatment_date, df$death_date)),
+                            group = df$person_id)
+
+gg_vistime(timeline_data, show_labels = TRUE, title = "Patient Timeline")
+
+#ggplot(extraction, 
+       #aes(x = type_of_fracture)) +
+  #geom_bar()
+
+#fracture_type <- extraction3 |>
+  #mutate(fracture_general = case_when(
+  #grepl("thoracic", extraction3$type_of_fracture, fixed = TRUE) ~ "thoracic"),
+  #grepl("lumbar", extraction3$type_of_fracture, fixed = TRUE) ~ "lumbar")
+
+extraction2 %>% 
+  ggplot(
+    aes(x = neoplasm)) +
+  geom_bar()
+
+fracture_bna = data.table(extraction2)[,list(num_before = sum(num_before_treatment), num_after=(sum(num_after_treatment)+sum(num_during_treatment))), by='person_id']
+
+earl_treat = setDT(extraction)[order(first_treatment_date), head(.SD, 1L), by = person_id]
+
+extraction$first_frac_before = 
+  as.integer(difftime(as.Date(extraction$first_treatment_date),
+                      as.Date(extraction$first_condition_date), units = "weeks"))
+                       
+
+```
+
+
+
+## Dahlia
+
+```{r}
+
+#| The difference in treatment date in days 
+extraction$date_difference <- difftime(as.Date(extraction$last_treatment_date), as.Date(extraction$first_treatment_date))
+
+#| Two way table showing gender and type_of_immunotherapy 
+
+two_way_table <- addmargins(table(extractiontest$gender,extractiontest$immunotherapy_general), margin = 1:2)
+
+two_way_table
+
+#group by patient id
+
+```
+
+## Alicia
+
+```{r}
+ggplot(extraction,
+       aes(x = number_of_fracture)) +
+  geom_bar()
+```
+
+```{r}
+ggplot(extraction,
+       aes(x = age))+
+  geom_bar()
+```
+
+```{r}
+ggplot(extraction,
+       aes(x = race,
+           fill = ethnicity)) +
+  geom_bar()
+```
+
+```{r}
+ggplot(extraction,
+       aes(x = age,
+           y = number_of_fracture))+
+  geom_point()
+```
+
+```{r}
+extraction %>%mutate(
+    person_id = ifelse(gender=="Male", person_id*(-1),
+                        person_id*1))%>%
+    ggplot(aes(x = age,y = person_id, fill=gender)) +
+    geom_bar(stat = "identity") +
+    coord_flip()+
+   labs(title = "person_ide by age and gender", x = "Age",
+        y = "person_id")
+```
+
+```{r}
+ggplot(extraction,
+       aes(x = age,
+           y = number_of_fracture))+
+  geom_violin()
+```
+
+```{r}
+extraction %>%mutate(
+    number_of_fracture = ifelse(gender=="Male", number_of_fracture*(-1),
+                        number_of_fracture*1))%>%
+    ggplot(aes(x = age,y = number_of_fracture, fill=gender)) +
+    geom_bar(stat = "identity") +
+    coord_flip()+
+   labs(title = "number_of_fracture by age and gender", x = "Age",
+        y = "number_of_fracture")
+```
+
+
+```{r}
+ggplot(extraction,
+       aes(x = age,
+           y = type_of_immunotherapy)) +
+  geom_boxplot()
+```
+
+```{r}
+ggplot(extraction,
+       aes(x = number_of_fracture,
+           y = type_of_immunotherapy)) +
+  geom_boxplot()
+```
+
+
+## Yoav
+
+```{r}
+ggplot(extraction,
+       aes(x = fct_infreq(type_of_immunotherapy))) +
+  geom_bar() + 
+  labs(x = "type_of_immunotherapy",
+       y = "Count") +
+  theme_bw()
+
+extraction |>
+  group_by() |>
+  count(type_of_immunotherapy)
+
+extractiontest <- extraction |>
+  mutate(immunotherapy_general = case_when(
+  grepl("durvalumab", extraction$type_of_immunotherapy, fixed = TRUE) ~ "durvalumab",
+  grepl("ipilimumab", extraction$type_of_immunotherapy, fixed = TRUE) ~ "ipilimumab",
+  grepl("atezolizumab", extraction$type_of_immunotherapy, fixed = TRUE) ~ "atezolizumab",
+  grepl("pembrolizumab", extraction$type_of_immunotherapy, fixed = TRUE) ~ "pembrolizumab",
+  grepl("nivolumab", extraction$type_of_immunotherapy, fixed = TRUE)  ~ "nivolumab"))
+
+ggplot(extractiontest,
+       aes(x = fct_infreq(immunotherapy_general))) +
+  geom_bar() + 
+  labs(x = "immunotherapy_general",
+       y = "Count") +
+  theme_bw()
+```
+
+```{r}
+ggplot(extraction3,
+       aes(x = fracture_time)) +
+  geom_boxplot() +
+  xlab("Fracture in Days Before or After First Treatment")
+
+ggplot(extraction3,
+       aes(x = fct_infreq(fracture_time_simple))) +
+  geom_bar() + 
+  labs(x = "fracture_time_simple",
+       y = "Count") +
+  theme_bw()
+```
+
+```{r}
+extraction3 <- extraction3[order(extraction3$fracture_date),]
+extraction_unique <- extraction3 |> distinct(person_id, .keep_all = TRUE)
+```
+
+```{r}
+extraction3_before <- subset(extraction3, fracture_date < first_treatment_date)
+extraction3_after <- subset(extraction3, fracture_date >= first_treatment_date)
+```
+
+```{r}
+extractiontest <- extractiontest |> 
+  mutate(durvalumab = case_when(
+    immunotherapy_general == "durvalumab" ~ 1,
+    immunotherapy_general != "durvalumab" ~ 0),
+    ipilimumab = case_when(
+    immunotherapy_general == "ipilimumab" ~ 1,
+    immunotherapy_general != "ipilimumab" ~ 0),
+    atezolizumab = case_when(
+    immunotherapy_general == "atezolizumab" ~ 1,
+    immunotherapy_general != "atezolizumab" ~ 0),
+    pembrolizumab = case_when(
+    immunotherapy_general == "pembrolizumab" ~ 1,
+    immunotherapy_general != "pembrolizumab" ~ 0),
+    nivolumab = case_when(
+    immunotherapy_general == "nivolumab" ~ 1,
+    immunotherapy_general != "nivolumab" ~ 0))
+```
+
+
+## Ellie
+
+

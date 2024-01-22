@@ -1,0 +1,67 @@
+---
+title: "Alicia mock dataset"
+format: html
+editor: visual
+---
+
+```{r}
+library(tidyverse)
+extraction = janitor::clean_names(read.csv(here::here("mock_data/extraction_mock.csv"), header = TRUE))
+extraction2 = janitor::clean_names(read.csv(here::here("mock_data/extraction2_mock.csv"), header = TRUE))
+library(dplyr)
+```
+
+```{r}
+extraction %>% 
+summarise(person_id)
+summarise
+```
+
+```{r}
+ggplot(extraction,
+       aes(x = number_of_fracture)) +
+  geom_bar()
+```
+
+```{r}
+ggplot(extraction,
+       aes(x = age))+
+  geom_bar()
+  
+```
+
+```{r}
+ggplot(extraction,
+       aes(x = race,
+           fill = ethnicity)) +
+  geom_bar()
+```
+
+```{r}
+extraction %>%mutate(
+    number_of_fracture = ifelse(gender=="Male", number_of_fracture*(-1),
+                        number_of_fracture*1))%>%
+    ggplot(aes(x = age,y = number_of_fracture, fill=gender)) +
+    geom_bar(stat = "identity") +
+    coord_flip()+
+   labs(title = "number_of_fracture by age and gender", x = "Age",
+        y = "number_of_fracture")
+```
+
+```{r}
+ggplot(extraction,
+       aes(x = age,
+           y = type_of_immunotherapy)) +
+  geom_boxplot()
+```
+
+```{r}
+ggplot(extraction,
+       aes(x = number_of_fracture,
+           y = type_of_immunotherapy)) +
+  geom_boxplot()
+
+```
+
+```{}
+```
