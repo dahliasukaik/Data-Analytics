@@ -1,0 +1,64 @@
+---
+title: "05b-activity"
+format: html
+---
+
+```{r}
+library(bayesrules)
+library(tidyverse)
+```
+
+
+```{r}
+data(cherry_blossom_sample)
+running <- cherry_blosson_sample %>% 
+  select(runner, age, net)
+n_runners <- nlevels(running$runner)
+```
+
+
+```{r}
+ggplot(running, aes( x = age, y = net)) +
+  geom_point() +
+  facet_wrap(~ runner) +
+  scale_x_continuous(breaks = c(50,55,60))
+```
+
+```{r}
+running_model_1<- lme4::lmer(net ~ age + (1 | runner), data = running)
+```
+
+
+```{r}
+broom.mixed::tidy(running_model_1, effects = "fixed")
+```
+
+```{r}
+broom.mixed::tidy(running_model_1, effects = "ran_vals") %>% 
+  slice(1:2, 35:36)
+```
+
+```{r}
+broom.mixed::tidy(running_model_1, effects = "ran_coefs") %>% 
+  slice(1:2, 35:36, 43:44)
+```
+
+```{r}
+broom.mixed::tidy(running_model_1, effects = "ran_pars")
+```
+
+```{r}
+running %>% 
+  filter(runner %in% c("4", "5", "20, 29")) %>% 
+  ggplot(., aes(x = age, y = net)) +
+    geom_point() +
+    geom_smooth(method = "lm", se = False) +
+    facet_grid(~runner)
+```
+
+```{r}
+
+```
+
+
+

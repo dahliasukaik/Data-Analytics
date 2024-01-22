@@ -1,0 +1,78 @@
+---
+title: "Day 02 Activity: Linear Regression"
+subtitle: "SoCal Data Science Bootcamp Summer 2023"
+format: 
+  html:
+    toc: true
+    html-math-method: katex
+    css: style.css
+---
+
+```{r}
+#| echo: false
+#| warning: false
+```
+
+In this activity you will explore the `penguins` data from the `palmerpenguins` package. Specifically, we will be interested in modeling the length of penguin flippers as a function of various predictors.
+
+```{r message=FALSE, warning=FALSE}
+library(palmerpenguins)
+library(tidyverse)
+library(broom)
+library(janitor)
+na.omit(data(penguins))
+
+```
+
+## Question 1
+Explore and visualize the relationship between the length of penguin flippers and bill length. 
+
+a) Fit a linear regression model for he length of penguin flippers as a function of the bill length. Interpret the parameter estimates. 
+
+```{r}
+model_g <- lm( flipper_length_mm ~ bill_length_mm , data = penguins)
+tidy(model_g)
+
+```
+126.68 + 1.69
+
+b) If a penguin has a 34.0 mm bill length, what is the predicted flipper length based on this model?
+FLM = 126.68 + 1.69 x 34.0 => 184.14
+
+c) What is the residual for the penguin with bill length of 34.0 mm?
+
+```{r}
+penguins <- penguins %>% 
+  modelr::add_residuals(model_g)
+
+ggplot(penguins, aes(x = bill_length_mm, y = resid)) +
+  geom_point() +
+  geom_hline(yintercept = 0)
+```
+
+d) Check to see if the conditions for fitting a linear regression model have been met. 
+
+L: Linear
+
+```{r}
+babies %>% 
+  ggplot (aes(x = gestation, y = bwt)) +
+  geom_point()
+```
+
+I: Independent observations
+
+N: Normality of residuals 
+
+E: Equal/constant variability around the line for all values of the explanatory variable
+
+e) Find a 95% confidence interval for the slope and interpret it. Determine if a positive or negative relationship can be concluded. 
+ 
+
+## Question 2
+Now that we have explored the relationship between the length of penguin flippers and bill length, let's consider adding in other potential predictors.
+
+a) Fit a model with bill length and island as predictors.
+b) Create a visual of bill length vs flipper length, including island as an additional variable. 
+c) Write out the equation for the least squares regression model and interpret the parameter estimates. 
+d) Check the model conditions.

@@ -1,0 +1,73 @@
+---
+title: "Day 03 Activity: Categorical Data Analysis"
+subtitle: "SoCal Data Science Bootcamp Summer 2023"
+format: 
+  html:
+    toc: true
+    html-math-method: katex
+    css: style.css
+---
+
+```{r}
+#| echo: false
+#| warning: false
+```
+
+
+# Lizard Habitats Data
+
+In order to assess whether habitat conditions are related to the sunlight choices a lizard makes for resting, Western fence lizard (Sceloporus occidentalis) were observed across three different microhabitats. (Adolph, 1990; Asbury and Adolph, 2007)
+
+- **Data Source:** [openintro package](http://openintrostat.github.io/openintro/reference/lizard_habitat.html)
+
+
+
+## Instructions: 
+
+Please answer the following questions as stated. Your answers should include a visual and/or a summary along with a written description of your findings. Work will be done individually, however, you will be encouraged to talk with each other about your ideas. Please make sure you 'Commit' and 'Push' your changes.
+
+
+## Question 1
+
+Read the `lizard_habitat` dataset from the `data` folder. 
+Create a contingency table and a stacked bar plot demonstrating the association between the sunlight choices a lizard makes for resting based on the habitat conditions
+
+## Question 2
+
+Based on the previous question, do you think habitat conditions are related to the sunlight choices a lizard makes for resting. Explain your reasoning.
+
+
+## Question 3
+
+
+Verify the assumption for a $\chi^2$ test of independence are satisfied. 
+
+- Compute the expected counts and fill out the table below *(change the numbers 1..9 only)*
+
+```{r}
+#| echo: true
+expected_counts_lizard <- tibble::tribble(
+  ~Site, ~ sun, ~partial, ~ shade,
+  "desert", 1, 2, 3,
+  "mountain", 4, 5, 6,
+  "valley", 7, 8, 9
+)
+```
+
+- Compute $\chi^2$ test statistic, if the null hypothesis is true and the conditions are met $\chi^2$ test statistic should follow a $\chi^2$ distribution with how many degrees of freedom ?
+
+
+## Question 4
+
+Using the [infer](https://infer.netlify.app/articles/chi_squared.html) package conduct a $\chi^2$ test of independence to determine if there is an association between habitat conditions and the sunlight a lizard chooses for resting.
+
+
+- Compute the $\chi^2$ test statistic
+- Construct a null distribution, generated under the assumption that these variables are not actually related
+- Visualize where the observed test statistic lies on the null distribution
+- Evaluate the strength of your evidence and make a claim in the context of the problem
+
+
+
+
+

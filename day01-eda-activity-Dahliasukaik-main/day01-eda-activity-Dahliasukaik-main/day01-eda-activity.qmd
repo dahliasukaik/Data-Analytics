@@ -1,0 +1,127 @@
+---
+title: "Day 01 Activity: Exploratory Data Analysis"
+subtitle: "SoCal Data Science Bootcamp Summer 2023"
+format: 
+  html:
+    toc: true
+    html-math-method: katex
+    css: style.css
+---
+
+```{r}
+#| echo: false
+#| warning: false
+```
+
+# Air Travel Data: The `anyflights` package
+
+You may recall working on the `nycflights13` data. 
+In this activity we will be looking at data specifically from Los Angeles International Airport (LAX) and John Wayne Airport (SNA) in 2019 and 2020. 
+In the `data` folder you'll find two types of data files for each year: 1) a flights file, and 2) a weather file.
+
+- **Data Description:** 
+  - `flights`: all flights that departed a given airport in a given year and month
+  - `weather`: hourly meteorological data for a given airport in a given year and month
+
+- **Data Source:** [anyflights package](https://anyflights.netlify.app/)
+
+
+## Instructions: 
+
+Please answer the following questions as stated. Your answers should include a visual and/or a summary along with a written description of your findings. Work will be done individually, however, you will be encouraged to talk with each other about your ideas. Please make sure you 'Commit' and 'Push' your changes.
+
+
+## Question 1
+
+Read one dataset from the `data` folder. 
+Write a question that you would want to answer using one variable from this dataset. 
+Answer your question using various EDA techniques. 
+
+```{r echo = FALSE, message = FALSE}
+## what is the distribution of the arrival delay variable
+library(tidyverse)
+library(janitor)
+flights <- na.omit(read.csv("data/flights19.csv", header = TRUE))
+summary <- flights %>% 
+    select(arr_delay) %>%  
+    summarize(mean_value = mean(arr_delay),
+            median_value = median(arr_delay, na.rm = TRUE),
+            min_value = min(arr_delay, na.rm = TRUE),
+            max_value = max(arr_delay, na.rm = TRUE))
+print(summary)
+
+   
+```
+
+## Question 2
+
+Using the same data set as in question 1 or a new dataset, write a question that you would want to answer using two variables from this dataset. Answer your question using various EDA techniques.
+
+```{r echo = FALSE, message = FALSE}
+## between LAX and SNA which airport had more arrival delays on average? 
+library(dplyr)
+
+# Summarize delays for LAX
+lax_summary <- flights %>%
+  filter(origin == "LAX") %>%
+  summarize(mean_delay = mean(arr_delay),
+            median_delay = median(arr_delay),
+            max_delay = max(arr_delay))
+
+# Summarize delays for SNA
+sna_summary <- flights %>%
+  filter(origin == "SNA") %>%
+  summarize(mean_delay = mean(arr_delay),
+            median_delay = median(arr_delay),
+            max_delay = max(arr_delay))
+
+# View the summarized delays for LAX and SNA
+print(lax_summary)
+
+print(sna_summary)
+
+
+
+library(ggplot2)
+
+# Create a bar plot comparing average delay times for LAX and SNA
+plot <- ggplot(flights, aes(x = arr_delay, y = origin)) +
+  geom_boxplot() +
+  labs(title = "Average Delay Times for LAX and SNA", x = "Average Delay (minutes)", y =   "Airport") +
+  theme_bw() + coord_cartesian(xlim = c(-91, 100))
+
+
+# Display the plot
+print(plot)
+
+# findings: Bas
+   
+```
+
+## Question 3
+
+Read at least two datasets and join them.
+Write a question that you would want to answer using two variables from these datasets.
+Answer your question using various EDA techniques.
+comparing the visibility variable and the arrival delays 
+
+```{r echo = FALSE, message = FALSE}
+#Is there any correlation between visibility variable from the weather dataset and the arrival delay variable in the flights dataset?
+weather <- na.omit(read.csv("data/weather19.csv", header = TRUE))
+merged_data <- inner_join(flights, weather, by = c("day", "hour"))
+
+# Create a scatter plot to compare visibility and arrival delay
+plot <- ggplot(merged_data, aes(x = visib, y = arr_delay)) +
+  geom_point() +
+  labs(title = "Comparison of Visibility and Arrival Delay",
+       x = "Visibility (miles)",
+       y = "Arrival Delay (minutes)") +
+  theme_bw()
+
+# Display the plot
+print(plot)
+
+#Findings: It seems like the a
+
+  
+```
